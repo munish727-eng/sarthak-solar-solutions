@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sarthak Solar Solutions | Rooftop Solar Solutions in Delhi</title>
+<title>Sarthak Solar Solutions | Solar Energy Solutions</title>
 
-<meta name="description" content="Sarthak Solar Solutions provides residential, commercial and rooftop solar installation, maintenance and consultation services in Delhi.">
+<meta name="description" content="Sarthak Solar Solutions provides rooftop solar installation, residential and commercial solar solutions, maintenance and consultation in Delhi and surrounding areas.">
 
 <style>
-
 *{
     margin:0;
     padding:0;
@@ -33,29 +31,37 @@ a{
     color:inherit;
 }
 
+img{
+    max-width:100%;
+    display:block;
+}
+
 /* ================= HEADER ================= */
 
 header{
+    width:100%;
+    background:#fff;
     position:sticky;
     top:0;
     z-index:1000;
-    background:#fff;
-    box-shadow:0 2px 15px rgba(0,0,0,.08);
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
 }
 
 .navbar{
     max-width:1200px;
     margin:auto;
-    padding:15px 20px;
+    min-height:72px;
+    padding:0 22px;
     display:flex;
-    justify-content:space-between;
     align-items:center;
+    justify-content:space-between;
 }
 
 .logo{
     font-size:25px;
     font-weight:800;
-    color:#14833b;
+    color:#16833b;
+    white-space:nowrap;
 }
 
 .logo span{
@@ -69,71 +75,84 @@ header{
 }
 
 .nav-links a{
+    font-size:15px;
     font-weight:600;
     color:#333;
-    transition:.3s;
+    transition:.25s;
 }
 
 .nav-links a:hover{
-    color:#14833b;
+    color:#16833b;
 }
 
 .nav-btn{
-    background:#14833b;
+    background:#16833b;
     color:#fff !important;
-    padding:10px 20px;
-    border-radius:25px;
+    padding:11px 20px;
+    border-radius:7px;
+}
+
+.nav-btn:hover{
+    background:#0f6d30;
 }
 
 /* ================= HERO ================= */
 
 .hero{
-    height:650px;
     position:relative;
+    height:600px;
+    min-height:520px;
     overflow:hidden;
     display:flex;
     align-items:center;
+    justify-content:center;
+    background:#222;
 }
 
 .hero-slides{
     position:absolute;
     inset:0;
+    width:100%;
+    height:100%;
 }
 
 .slide{
     position:absolute;
     inset:0;
+    width:100%;
+    height:100%;
+
+    background-position:center center;
     background-size:cover;
-    background-position:center;
+    background-repeat:no-repeat;
+
     opacity:0;
-    animation:solarSlider 20s infinite;
+    animation:heroSlide 20s infinite;
 }
 
-/* Residential Rooftop */
+/* Rooftop solar images */
+
 .slide:nth-child(1){
     background-image:url("https://raytones.in/assets/up_solar_rooftop.png");
     animation-delay:0s;
 }
 
-/* Solar Installation */
 .slide:nth-child(2){
     background-image:url("https://sunlynksolar.com/new_assets/instalation.webp");
     animation-delay:5s;
 }
 
-/* Residential Rooftop */
 .slide:nth-child(3){
     background-image:url("https://surdevenergy.com/assets/project-residential-rooftop-DsQ6C9_2.jpg");
     animation-delay:10s;
 }
 
-/* Modern House Solar */
 .slide:nth-child(4){
     background-image:url("https://www.joyfulsolarpowersystems.com/img/p9.jpeg");
     animation-delay:15s;
 }
 
-@keyframes solarSlider{
+@keyframes heroSlide{
 
     0%{
         opacity:0;
@@ -154,71 +173,76 @@ header{
     100%{
         opacity:0;
     }
-
 }
+
+/* Dark overlay ONLY over image */
 
 .hero-overlay{
     position:absolute;
     inset:0;
-    background:
-    linear-gradient(
+    background:linear-gradient(
         90deg,
-        rgba(0,0,0,.78),
-        rgba(0,0,0,.48),
-        rgba(0,0,0,.12)
+        rgba(0,0,0,.72) 0%,
+        rgba(0,0,0,.45) 45%,
+        rgba(0,0,0,.18) 100%
     );
+    z-index:1;
 }
 
 .hero-content{
     position:relative;
     z-index:2;
-    max-width:1200px;
     width:100%;
-    margin:auto;
-    padding:50px 20px;
+    max-width:1200px;
+    padding:40px 22px;
     color:#fff;
 }
 
 .hero-badge{
     display:inline-block;
-    background:#f39c12;
-    padding:7px 17px;
+    background:rgba(243,156,18,.95);
+    color:#fff;
+    padding:7px 14px;
     border-radius:30px;
-    font-size:14px;
-    font-weight:bold;
-    margin-bottom:20px;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.7px;
+    margin-bottom:18px;
 }
 
 .hero h1{
-    font-size:60px;
-    line-height:1.08;
-    max-width:760px;
-    margin-bottom:22px;
+    max-width:720px;
+    font-size:54px;
+    line-height:1.12;
+    margin-bottom:20px;
 }
 
 .hero h1 span{
-    color:#ffd45a;
+    color:#f5a623;
 }
 
 .hero p{
     max-width:650px;
-    font-size:19px;
+    font-size:18px;
     color:#f2f2f2;
     margin-bottom:30px;
 }
 
 .hero-buttons{
     display:flex;
-    gap:14px;
+    gap:15px;
     flex-wrap:wrap;
 }
 
 .btn{
-    display:inline-block;
-    padding:14px 26px;
-    border-radius:30px;
-    font-weight:bold;
-    transition:.3s;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:48px;
+    padding:13px 25px;
+    border-radius:7px;
+    font-weight:700;
+    transition:.25s;
 }
 
 .btn-primary{
@@ -227,55 +251,24 @@ header{
 }
 
 .btn-primary:hover{
-    background:#d98200;
+    background:#d98400;
     transform:translateY(-2px);
 }
 
 .btn-secondary{
-    background:#14833b;
+    background:#16833b;
     color:#fff;
 }
 
 .btn-secondary:hover{
-    background:#0c642d;
+    background:#0f6d30;
     transform:translateY(-2px);
 }
 
-/* ================= STATS ================= */
+/* ================= COMMON ================= */
 
-.stats{
-    max-width:1100px;
-    margin:-55px auto 0;
-    position:relative;
-    z-index:10;
-    padding:0 20px;
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:15px;
-}
-
-.stat{
-    background:#fff;
-    text-align:center;
-    padding:25px 15px;
-    border-radius:14px;
-    box-shadow:0 8px 30px rgba(0,0,0,.12);
-}
-
-.stat h2{
-    color:#14833b;
-    font-size:30px;
-}
-
-.stat p{
-    color:#666;
-    font-size:14px;
-}
-
-/* ================= GENERAL ================= */
-
-section{
-    padding:80px 20px;
+.section{
+    padding:75px 22px;
 }
 
 .container{
@@ -285,110 +278,134 @@ section{
 
 .section-title{
     text-align:center;
-    margin-bottom:50px;
+    margin-bottom:45px;
 }
 
 .section-title h2{
-    color:#14833b;
     font-size:38px;
+    color:#166b36;
     margin-bottom:10px;
 }
 
 .section-title p{
+    color:#666;
     max-width:700px;
     margin:auto;
+}
+
+/* ================= STATS ================= */
+
+.stats{
+    margin-top:-55px;
+    position:relative;
+    z-index:5;
+}
+
+.stats-grid{
+    max-width:1100px;
+    margin:auto;
+    padding:0 20px;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.stat-card{
+    background:#fff;
+    border-radius:12px;
+    padding:25px 15px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.10);
+}
+
+.stat-card h3{
+    color:#16833b;
+    font-size:30px;
+    margin-bottom:5px;
+}
+
+.stat-card p{
     color:#666;
+    font-size:14px;
 }
 
 /* ================= INTRO ================= */
 
-.intro{
+.intro-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:55px;
+    gap:50px;
     align-items:center;
 }
 
 .intro-image{
-    position:relative;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
 }
 
 .intro-image img{
     width:100%;
-    height:430px;
+    height:380px;
     object-fit:cover;
-    border-radius:20px;
-    box-shadow:0 12px 35px rgba(0,0,0,.15);
 }
 
-.image-label{
-    position:absolute;
-    left:20px;
-    bottom:20px;
-    background:#14833b;
-    color:#fff;
-    padding:10px 17px;
-    border-radius:25px;
-    font-weight:bold;
-}
-
-.intro-text h2{
-    font-size:40px;
-    color:#14833b;
-    line-height:1.2;
+.intro-content h2{
+    font-size:38px;
+    color:#166b36;
     margin-bottom:18px;
 }
 
-.intro-text p{
+.intro-content p{
     color:#555;
-    margin-bottom:17px;
+    margin-bottom:18px;
 }
 
 .check-list{
-    list-style:none;
-    margin-top:20px;
+    display:grid;
+    gap:11px;
 }
 
-.check-list li{
-    margin:12px 0;
+.check-list div{
     font-weight:600;
+    color:#333;
 }
 
-.check-list li::before{
-    content:"✓";
-    color:#14833b;
-    font-weight:bold;
-    margin-right:10px;
+.check-list span{
+    color:#16833b;
+    font-weight:800;
+    margin-right:8px;
 }
 
 /* ================= SERVICES ================= */
 
-.services{
-    background:#f5faf7;
+.services-section{
+    background:#f6faf7;
 }
 
-.service-grid{
+.services-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:25px;
+    gap:24px;
 }
 
 .service-card{
     background:#fff;
-    border-radius:17px;
+    border-radius:13px;
     overflow:hidden;
     box-shadow:0 5px 20px rgba(0,0,0,.08);
     transition:.3s;
 }
 
 .service-card:hover{
-    transform:translateY(-7px);
-    box-shadow:0 12px 30px rgba(0,0,0,.14);
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(0,0,0,.13);
 }
 
 .service-card img{
     width:100%;
-    height:220px;
+    height:210px;
     object-fit:cover;
 }
 
@@ -397,177 +414,219 @@ section{
 }
 
 .service-content h3{
-    color:#14833b;
+    color:#166b36;
     font-size:21px;
-    margin-bottom:9px;
+    margin-bottom:8px;
 }
 
 .service-content p{
     color:#666;
-    font-size:15px;
+    font-size:14px;
 }
 
 /* ================= PM SURYA GHAR ================= */
 
 .pm-section{
-    background:linear-gradient(135deg,#116f32,#168b43);
+    background:linear-gradient(135deg,#166b36,#1c8d49);
     color:#fff;
 }
 
-.pm-content{
+.pm-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:55px;
+    grid-template-columns:1.2fr .8fr;
+    gap:40px;
     align-items:center;
 }
 
 .pm-content h2{
-    font-size:40px;
-    line-height:1.2;
-    margin-bottom:18px;
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.pm-content h3{
+    color:#ffd166;
+    margin-bottom:15px;
 }
 
 .pm-content p{
-    color:#e9f5ec;
-    margin-bottom:18px;
+    color:#f1f1f1;
+    margin-bottom:22px;
 }
 
-.process{
+.pm-steps{
     display:grid;
-    gap:13px;
+    gap:12px;
 }
 
-.process div{
-    background:rgba(255,255,255,.12);
-    padding:15px 20px;
-    border-radius:10px;
+.pm-step{
+    background:rgba(255,255,255,.1);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:8px;
+    padding:12px 15px;
 }
 
-.process strong{
-    color:#ffd45a;
-    margin-right:7px;
+.pm-image{
+    border-radius:15px;
+    overflow:hidden;
 }
 
-/* ================= WHY ================= */
+.pm-image img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+/* ================= WHY US ================= */
 
 .why-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:.9fr 1.1fr;
     gap:50px;
     align-items:center;
 }
 
+.why-image{
+    border-radius:15px;
+    overflow:hidden;
+}
+
 .why-image img{
     width:100%;
-    height:420px;
+    height:390px;
     object-fit:cover;
-    border-radius:20px;
 }
 
 .why-list{
     display:grid;
-    gap:17px;
+    gap:20px;
 }
 
 .why-item{
     display:flex;
     gap:15px;
-    background:#f6faf7;
-    padding:18px;
-    border-radius:12px;
+    align-items:flex-start;
 }
 
 .why-icon{
-    font-size:28px;
+    min-width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#e9f7ed;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#16833b;
+    font-size:21px;
+    font-weight:800;
 }
 
 .why-item h3{
-    color:#14833b;
-    margin-bottom:4px;
+    color:#166b36;
+    margin-bottom:3px;
 }
 
 .why-item p{
     color:#666;
+    font-size:14px;
 }
 
 /* ================= CTA ================= */
 
 .cta{
+    padding:70px 22px;
     background:#f39c12;
-    color:#fff;
     text-align:center;
+    color:#fff;
 }
 
 .cta h2{
-    font-size:40px;
-    margin-bottom:12px;
+    font-size:38px;
+    margin-bottom:10px;
 }
 
 .cta p{
-    max-width:700px;
-    margin:0 auto 25px;
+    margin-bottom:25px;
+}
+
+.cta .btn{
+    background:#fff;
+    color:#166b36;
 }
 
 /* ================= FOOTER ================= */
 
 footer{
-    background:#101410;
+    background:#10271a;
     color:#fff;
-    padding:55px 20px 25px;
+    padding:45px 22px 20px;
 }
 
 .footer-grid{
     max-width:1200px;
     margin:auto;
     display:grid;
-    grid-template-columns:2fr 1fr 1.4fr;
+    grid-template-columns:1.3fr 1fr 1fr;
     gap:40px;
 }
 
-footer h3{
-    color:#ffd45a;
-    margin-bottom:15px;
+.footer-logo{
+    font-size:24px;
+    font-weight:800;
+    margin-bottom:10px;
 }
 
-footer p,
-footer li{
-    color:#aaa;
+.footer-logo span{
+    color:#f39c12;
+}
+
+footer p{
+    color:#c9d3cc;
+    font-size:14px;
     margin-bottom:8px;
 }
 
-footer ul{
-    list-style:none;
+.footer-title{
+    color:#fff;
+    font-size:18px;
+    margin-bottom:15px;
 }
 
-.footer-bottom{
+.footer-contact a{
+    color:#dce7df;
+    display:block;
+    margin-bottom:9px;
+}
+
+.footer-contact a:hover{
+    color:#f39c12;
+}
+
+.copyright{
     max-width:1200px;
     margin:35px auto 0;
     padding-top:20px;
-    border-top:1px solid #303530;
+    border-top:1px solid rgba(255,255,255,.12);
     text-align:center;
-    color:#777;
-    font-size:14px;
+    color:#9eaaa1;
+    font-size:13px;
 }
 
-/* ================= PROFESSIONAL FLOATING BUTTONS ================= */
+/* ================= FLOATING BUTTONS ================= */
 
 .floating{
     position:fixed;
-    right:22px;
-    bottom:22px;
+    right:20px;
+    bottom:20px;
     z-index:9999;
 
     display:flex;
     flex-direction:column;
-    gap:14px;
+    gap:13px;
 }
 
 .float-btn{
-    position:relative;
-
     width:60px;
     height:60px;
-
     border-radius:50%;
 
     display:flex;
@@ -575,10 +634,7 @@ footer ul{
     justify-content:center;
 
     box-shadow:0 8px 25px rgba(0,0,0,.25);
-
-    transition:
-        transform .25s ease,
-        box-shadow .25s ease;
+    transition:.25s;
 }
 
 .float-btn svg{
@@ -588,41 +644,28 @@ footer ul{
 }
 
 .float-btn:hover{
-    transform:scale(1.12);
-
-    box-shadow:
-        0 10px 30px rgba(0,0,0,.32);
+    transform:scale(1.1);
 }
 
 .whatsapp{
     background:#25D366;
+    position:relative;
 }
 
 .call{
-    background:#14833b;
+    background:#16833b;
 }
-
-/* WhatsApp pulse */
 
 .whatsapp::after{
     content:"";
-
     position:absolute;
-
-    width:60px;
-    height:60px;
-
+    inset:0;
     border-radius:50%;
-
     border:2px solid #25D366;
-
-    animation:whatsappPulse 2s infinite;
-
-    pointer-events:none;
+    animation:pulse 2s infinite;
 }
 
-@keyframes whatsappPulse{
-
+@keyframes pulse{
     0%{
         transform:scale(1);
         opacity:.7;
@@ -637,7 +680,6 @@ footer ul{
         transform:scale(1.35);
         opacity:0;
     }
-
 }
 
 /* ================= MOBILE ================= */
@@ -645,112 +687,141 @@ footer ul{
 @media(max-width:900px){
 
     .nav-links{
-        gap:12px;
-    }
-
-    .nav-links a:not(.nav-btn){
-        display:none;
+        gap:15px;
     }
 
     .hero{
-        height:600px;
+        height:560px;
     }
 
     .hero h1{
-        font-size:45px;
+        font-size:44px;
     }
 
-    .stats{
+    .stats-grid{
         grid-template-columns:repeat(2,1fr);
-        margin-top:-40px;
     }
 
-    .intro,
-    .pm-content,
+    .services-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .intro-grid,
+    .pm-grid,
     .why-grid{
         grid-template-columns:1fr;
-    }
-
-    .service-grid{
-        grid-template-columns:1fr 1fr;
     }
 
     .footer-grid{
         grid-template-columns:1fr 1fr;
     }
-
 }
 
 @media(max-width:600px){
 
     .navbar{
-        padding:14px 15px;
+        min-height:65px;
+        padding:0 15px;
     }
 
     .logo{
-        font-size:20px;
+        font-size:19px;
+    }
+
+    .nav-links{
+        gap:10px;
+    }
+
+    .nav-links a{
+        font-size:13px;
+    }
+
+    .nav-btn{
+        padding:8px 11px;
     }
 
     .hero{
-        height:590px;
+        height:540px;
+        min-height:540px;
     }
 
     .hero-content{
-        padding:50px 18px;
+        padding:30px 18px;
     }
 
     .hero h1{
-        font-size:37px;
+        font-size:38px;
     }
 
     .hero p{
         font-size:16px;
     }
 
-    section{
-        padding:60px 18px;
+    .hero-overlay{
+        background:linear-gradient(
+            90deg,
+            rgba(0,0,0,.72),
+            rgba(0,0,0,.35)
+        );
     }
 
-    .section-title h2{
-        font-size:30px;
+    .stats{
+        margin-top:-35px;
     }
 
-    .intro-text h2,
+    .stats-grid{
+        padding:0 14px;
+        gap:10px;
+    }
+
+    .stat-card{
+        padding:18px 8px;
+    }
+
+    .stat-card h3{
+        font-size:24px;
+    }
+
+    .stat-card p{
+        font-size:12px;
+    }
+
+    .section{
+        padding:55px 18px;
+    }
+
+    .section-title h2,
+    .intro-content h2,
     .pm-content h2,
     .cta h2{
         font-size:30px;
     }
 
-    .intro-image img,
-    .why-image img{
-        height:330px;
+    .intro-image img{
+        height:280px;
     }
 
-    .service-grid{
+    .services-grid{
         grid-template-columns:1fr;
     }
 
-    .stats{
-        padding:0 12px;
-        gap:10px;
+    .service-card img{
+        height:220px;
     }
 
-    .stat{
-        padding:18px 8px;
-    }
-
-    .stat h2{
-        font-size:24px;
+    .pm-image img,
+    .why-image img{
+        height:280px;
     }
 
     .footer-grid{
         grid-template-columns:1fr;
+        gap:25px;
     }
 
     .floating{
-        right:15px;
-        bottom:15px;
-        gap:11px;
+        right:14px;
+        bottom:14px;
     }
 
     .float-btn{
@@ -762,16 +833,8 @@ footer ul{
         width:28px;
         height:28px;
     }
-
-    .whatsapp::after{
-        width:55px;
-        height:55px;
-    }
-
 }
-
 </style>
-
 </head>
 
 <body>
@@ -779,764 +842,612 @@ footer ul{
 <!-- ================= HEADER ================= -->
 
 <header>
+    <div class="navbar">
 
-<div class="navbar">
+        <div class="logo">
+            Sarthak <span>Solar Solutions</span>
+        </div>
 
-```
-<div class="logo">
-    Sarthak <span>Solar Solutions</span>
-</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="nav-btn">Get Quote</a>
+        </nav>
 
-<nav class="nav-links">
-
-    <a href="index.html">
-        Home
-    </a>
-
-    <a href="about.html">
-        About
-    </a>
-
-    <a href="contact.html">
-        Contact
-    </a>
-
-    <a href="contact.html" class="nav-btn">
-        Get Quote
-    </a>
-
-</nav>
-```
-
-</div>
-
+    </div>
 </header>
+
 
 <!-- ================= HERO ================= -->
 
 <section class="hero">
 
-```
-<div class="hero-slides">
-
-    <div class="slide"></div>
-    <div class="slide"></div>
-    <div class="slide"></div>
-    <div class="slide"></div>
-
-</div>
-
-<div class="hero-overlay"></div>
-
-
-<div class="hero-content">
-
-    <div class="hero-badge">
-        CLEAN ENERGY • GREEN FUTURE
+    <div class="hero-slides">
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
     </div>
 
-    <h1>
-        Power Your Future with
-        <span>Solar Energy</span>
-    </h1>
+    <div class="hero-overlay"></div>
 
-    <p>
-        Reliable and affordable rooftop solar solutions
-        for homes, businesses and commercial properties.
-        Reduce your electricity bills and move towards
-        cleaner energy.
-    </p>
+    <div class="hero-content">
 
-    <div class="hero-buttons">
+        <div class="hero-badge">
+            CLEAN ENERGY • GREEN FUTURE
+        </div>
 
-        <a
-        href="contact.html"
-        class="btn btn-primary">
+        <h1>
+            Power Your Future with
+            <span>Solar Energy</span>
+        </h1>
 
-            Get Free Consultation
+        <p>
+            Reliable and affordable rooftop solar solutions for
+            homes, businesses and commercial properties.
+            Reduce your electricity bills and move towards
+            cleaner energy.
+        </p>
 
-        </a>
+        <div class="hero-buttons">
 
-        <a
-        href="tel:+918607606682"
-        class="btn btn-secondary">
+            <a href="contact.html" class="btn btn-primary">
+                Get Free Consultation
+            </a>
 
-            Call Us
+            <a href="tel:+918607606682" class="btn btn-secondary">
+                Call Us
+            </a>
 
-        </a>
+        </div>
 
     </div>
-
-</div>
-```
 
 </section>
+
 
 <!-- ================= STATS ================= -->
 
-<div class="stats">
+<section class="stats">
 
-```
-<div class="stat">
+    <div class="stats-grid">
 
-    <h2>500+</h2>
+        <div class="stat-card">
+            <h3>500+</h3>
+            <p>Installations Done</p>
+        </div>
 
-    <p>
-        Installations Done
-    </p>
+        <div class="stat-card">
+            <h3>5+</h3>
+            <p>Years Experience</p>
+        </div>
 
-</div>
+        <div class="stat-card">
+            <h3>98%</h3>
+            <p>Customer Satisfaction</p>
+        </div>
 
+        <div class="stat-card">
+            <h3>7 Days</h3>
+            <p>Open Every Day</p>
+        </div>
 
-<div class="stat">
+    </div>
 
-    <h2>5+</h2>
+</section>
 
-    <p>
-        Years Experience
-    </p>
-
-</div>
-
-
-<div class="stat">
-
-    <h2>98%</h2>
-
-    <p>
-        Customer Satisfaction
-    </p>
-
-</div>
-
-
-<div class="stat">
-
-    <h2>7 Days</h2>
-
-    <p>
-        Open Every Day
-    </p>
-
-</div>
-```
-
-</div>
 
 <!-- ================= INTRO ================= -->
 
-<section>
+<section class="section">
 
-<div class="container intro">
+    <div class="container intro-grid">
 
-```
-<div class="intro-image">
+        <div class="intro-image">
+            <img
+                src="https://surdevenergy.com/assets/project-residential-rooftop-DsQ6C9_2.jpg"
+                alt="Residential rooftop solar installation">
+        </div>
 
-    <img
-    src="https://surdevenergy.com/assets/project-residential-rooftop-DsQ6C9_2.jpg"
-    alt="Residential rooftop solar installation">
+        <div class="intro-content">
 
-    <div class="image-label">
-        Residential Rooftop Solar
+            <h2>Go Solar. Save More on Electricity.</h2>
+
+            <p>
+                Solar energy can help reduce long-term electricity
+                expenses while providing a cleaner and more
+                sustainable source of power.
+            </p>
+
+            <p>
+                At Sarthak Solar Solutions, we provide complete
+                rooftop solar solutions for residential and
+                commercial customers.
+            </p>
+
+            <p>
+                We assess your electricity requirements and rooftop
+                space to help plan a suitable solar solution.
+            </p>
+
+            <div class="check-list">
+
+                <div>
+                    <span>✓</span>
+                    Reduce Electricity Bills
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Clean & Renewable Energy
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Rooftop Solar Solutions
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Long-Term Energy Savings
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Professional Installation & Service
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
-</div>
-
-
-<div class="intro-text">
-
-    <h2>
-        Go Solar. Save More on Electricity.
-    </h2>
-
-    <p>
-        Solar energy can help reduce long-term
-        electricity expenses while providing
-        clean and renewable energy.
-    </p>
-
-    <p>
-        At <strong>Sarthak Solar Solutions</strong>,
-        we provide complete rooftop solar solutions
-        for residential and commercial customers.
-    </p>
-
-    <p>
-        We assess your electricity requirements,
-        rooftop space and suitable system before
-        installation.
-    </p>
-
-    <ul class="check-list">
-
-        <li>
-            Reduce Electricity Bills
-        </li>
-
-        <li>
-            Clean & Renewable Energy
-        </li>
-
-        <li>
-            Rooftop Solar Solutions
-        </li>
-
-        <li>
-            Long-Term Energy Savings
-        </li>
-
-        <li>
-            Professional Installation & Service
-        </li>
-
-    </ul>
-
-</div>
-```
-
-</div>
-
 </section>
+
 
 <!-- ================= SERVICES ================= -->
 
-<section class="services">
+<section class="section services-section">
 
-<div class="container">
+    <div class="container">
 
-```
-<div class="section-title">
+        <div class="section-title">
 
-    <h2>
-        Our Solar Services
-    </h2>
-
-    <p>
-        Complete solar solutions for homes,
-        offices, shops and commercial properties.
-    </p>
-
-</div>
-
-
-<div class="service-grid">
-
-
-    <div class="service-card">
-
-        <img
-        src="https://raytones.in/assets/up_solar_rooftop.png"
-        alt="Residential rooftop solar">
-
-        <div class="service-content">
-
-            <h3>
-                Residential Solar Solutions
-            </h3>
+            <h2>Our Solar Services</h2>
 
             <p>
-                Rooftop solar systems for homes
-                designed to reduce electricity
-                expenses and provide clean energy.
+                Complete solar solutions designed for homes,
+                businesses and commercial properties.
             </p>
 
         </div>
 
-    </div>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <img
+                    src="https://raytones.in/assets/up_solar_rooftop.png"
+                    alt="Residential solar rooftop">
+
+                <div class="service-content">
+
+                    <h3>Residential Solar Solutions</h3>
+
+                    <p>
+                        Rooftop solar systems designed for homes
+                        to help reduce electricity expenses.
+                    </p>
+
+                </div>
+
+            </div>
 
 
-    <div class="service-card">
+            <div class="service-card">
 
-        <img
-        src="https://indiansolarsolution.com/wp-content/uploads/2024/12/Untitled-1-Recovered12478.png"
-        alt="Commercial rooftop solar">
+                <img
+                    src="https://indiansolarsolution.com/wp-content/uploads/2024/12/Untitled-1-Recovered12478.png"
+                    alt="Commercial solar solution">
 
-        <div class="service-content">
+                <div class="service-content">
 
-            <h3>
-                Commercial Solar Solutions
-            </h3>
+                    <h3>Commercial Solar Solutions</h3>
 
-            <p>
-                Solar solutions for offices,
-                shops, warehouses and commercial
-                properties.
-            </p>
+                    <p>
+                        Solar solutions for offices, shops,
+                        factories and other commercial properties.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <img
+                    src="https://sunlynksolar.com/new_assets/instalation.webp"
+                    alt="Solar panel installation">
+
+                <div class="service-content">
+
+                    <h3>Rooftop Solar Installation</h3>
+
+                    <p>
+                        Professional rooftop solar installation
+                        with proper planning and setup.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <img
+                    src="https://myrsolar.com/img/how-to-choose-installer-hero.jpg"
+                    alt="Solar maintenance">
+
+                <div class="service-content">
+
+                    <h3>Solar Maintenance & Repair</h3>
+
+                    <p>
+                        Maintenance and support services to keep
+                        your solar system working efficiently.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <img
+                    src="https://surdevenergy.com/assets/project-residential-rooftop-DsQ6C9_2.jpg"
+                    alt="Solar panel cleaning">
+
+                <div class="service-content">
+
+                    <h3>Solar Panel Cleaning</h3>
+
+                    <p>
+                        Regular solar panel cleaning helps maintain
+                        efficient power generation.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <img
+                    src="https://www.joyfulsolarpowersystems.com/img/p9.jpeg"
+                    alt="Solar consultation">
+
+                <div class="service-content">
+
+                    <h3>Site Survey & Consultation</h3>
+
+                    <p>
+                        Rooftop assessment and consultation to
+                        understand your solar requirements.
+                    </p>
+
+                </div>
+
+            </div>
 
         </div>
 
     </div>
-
-
-    <div class="service-card">
-
-        <img
-        src="https://sunlynksolar.com/new_assets/instalation.webp"
-        alt="Solar panel installation">
-
-        <div class="service-content">
-
-            <h3>
-                Rooftop Solar Installation
-            </h3>
-
-            <p>
-                Complete rooftop solar installation
-                from site assessment to system setup.
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="service-card">
-
-        <img
-        src="https://myrsolar.com/img/how-to-choose-installer-hero.jpg"
-        alt="Solar technician">
-
-        <div class="service-content">
-
-            <h3>
-                Solar Maintenance & Repair
-            </h3>
-
-            <p>
-                Maintenance and troubleshooting
-                support to keep your solar system
-                performing properly.
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="service-card">
-
-        <img
-        src="https://surdevenergy.com/assets/project-residential-rooftop-DsQ6C9_2.jpg"
-        alt="Solar panel cleaning">
-
-        <div class="service-content">
-
-            <h3>
-                Solar Panel Cleaning
-            </h3>
-
-            <p>
-                Regular panel cleaning helps maintain
-                system performance and efficiency.
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="service-card">
-
-        <img
-        src="https://www.joyfulsolarpowersystems.com/img/p9.jpeg"
-        alt="Solar consultation">
-
-        <div class="service-content">
-
-            <h3>
-                Site Survey & Consultation
-            </h3>
-
-            <p>
-                We assess electricity usage and
-                rooftop conditions to suggest a
-                suitable solar solution.
-            </p>
-
-        </div>
-
-    </div>
-
-
-</div>
-```
-
-</div>
 
 </section>
+
 
 <!-- ================= PM SURYA GHAR ================= -->
 
-<section class="pm-section">
+<section class="section pm-section">
 
-<div class="container pm-content">
+    <div class="container pm-grid">
 
-```
-<div>
+        <div class="pm-content">
 
-    <h2>
-        PM Surya Ghar:
-        Muft Bijli Yojana
-    </h2>
+            <h2>PM Surya Ghar: Muft Bijli Yojana</h2>
 
-    <p>
-        Solar for Every Home | A Brighter Future
-    </p>
+            <h3>Solar for Every Home | A Brighter Future</h3>
 
-    <p>
-        Eligible residential customers may benefit
-        from government support under applicable
-        schemes and prevailing government guidelines.
-    </p>
+            <p>
+                Eligible residential customers may benefit from
+                government support under applicable schemes and
+                prevailing government guidelines.
+            </p>
 
-    <a
-    href="contact.html"
-    class="btn btn-primary">
+            <div class="pm-steps">
 
-        Check Your Solar Requirement
+                <div class="pm-step">
+                    <strong>1. Contact Us</strong>
+                </div>
 
-    </a>
+                <div class="pm-step">
+                    <strong>2. Site Assessment</strong>
+                </div>
 
-</div>
+                <div class="pm-step">
+                    <strong>3. Solar System Planning</strong>
+                </div>
+
+                <div class="pm-step">
+                    <strong>4. Installation</strong>
+                </div>
+
+                <div class="pm-step">
+                    <strong>5. After-Sales Support</strong>
+                </div>
+
+            </div>
+
+        </div>
 
 
-<div class="process">
+        <div class="pm-image">
 
-    <div>
-        <strong>01.</strong>
-        Contact Us
+            <img
+                src="https://www.joyfulsolarpowersystems.com/img/p9.jpeg"
+                alt="Rooftop solar system">
+
+        </div>
+
     </div>
-
-    <div>
-        <strong>02.</strong>
-        Site Assessment
-    </div>
-
-    <div>
-        <strong>03.</strong>
-        Solar System Planning
-    </div>
-
-    <div>
-        <strong>04.</strong>
-        Installation
-    </div>
-
-    <div>
-        <strong>05.</strong>
-        After-Sales Support
-    </div>
-
-</div>
-```
-
-</div>
 
 </section>
+
 
 <!-- ================= WHY CHOOSE US ================= -->
 
-<section>
+<section class="section">
 
-<div class="container">
+    <div class="container">
 
-```
-<div class="section-title">
+        <div class="section-title">
 
-    <h2>
-        Why Choose Sarthak Solar Solutions?
-    </h2>
+            <h2>Why Choose Sarthak Solar Solutions?</h2>
 
-    <p>
-        Professional guidance and complete support
-        from consultation to after-sales service.
-    </p>
+            <p>
+                Reliable guidance and professional solar support
+                from consultation to after-sales service.
+            </p>
 
-</div>
+        </div>
 
 
-<div class="why-grid">
+        <div class="why-grid">
+
+            <div class="why-image">
+
+                <img
+                    src="https://sunlynksolar.com/new_assets/instalation.webp"
+                    alt="Professional solar installation">
+
+            </div>
 
 
-    <div class="why-image">
+            <div class="why-list">
 
-        <img
-        src="https://sunlynksolar.com/new_assets/instalation.webp"
-        alt="Professional solar installation">
+                <div class="why-item">
+
+                    <div class="why-icon">✓</div>
+
+                    <div>
+                        <h3>Transparent Guidance</h3>
+                        <p>
+                            Clear information about solar systems,
+                            requirements and installation.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="why-item">
+
+                    <div class="why-icon">✓</div>
+
+                    <div>
+                        <h3>Customised Solutions</h3>
+                        <p>
+                            Solar solutions planned according to
+                            your electricity usage and rooftop.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="why-item">
+
+                    <div class="why-icon">✓</div>
+
+                    <div>
+                        <h3>Quality Installation</h3>
+                        <p>
+                            Proper installation practices for
+                            dependable solar performance.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="why-item">
+
+                    <div class="why-icon">✓</div>
+
+                    <div>
+                        <h3>After-Sales Support</h3>
+                        <p>
+                            Assistance and support even after
+                            installation.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
-
-
-    <div class="why-list">
-
-
-        <div class="why-item">
-
-            <div class="why-icon">
-                ✓
-            </div>
-
-            <div>
-
-                <h3>
-                    Transparent Guidance
-                </h3>
-
-                <p>
-                    Clear information about your
-                    solar requirements and installation
-                    process.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="why-item">
-
-            <div class="why-icon">
-                ✓
-            </div>
-
-            <div>
-
-                <h3>
-                    Customised Solutions
-                </h3>
-
-                <p>
-                    Solar systems planned according
-                    to electricity usage and available
-                    rooftop space.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="why-item">
-
-            <div class="why-icon">
-                ✓
-            </div>
-
-            <div>
-
-                <h3>
-                    Quality Installation
-                </h3>
-
-                <p>
-                    Professional installation with
-                    attention to safety and system
-                    performance.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="why-item">
-
-            <div class="why-icon">
-                ✓
-            </div>
-
-            <div>
-
-                <h3>
-                    After-Sales Support
-                </h3>
-
-                <p>
-                    Continued support for maintenance,
-                    cleaning and service requirements.
-                </p>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</div>
-```
-
-</div>
 
 </section>
+
 
 <!-- ================= CTA ================= -->
 
 <section class="cta">
 
-<div class="container">
+    <h2>Ready to Switch to Solar?</h2>
 
-```
-<h2>
-    Ready to Switch to Solar?
-</h2>
+    <p>
+        Get a free consultation and rooftop solar assessment
+        for your home or business.
+    </p>
 
-<p>
-    Get in touch with Sarthak Solar Solutions
-    for a free consultation and rooftop solar assessment.
-</p>
-
-<a
-href="contact.html"
-class="btn btn-secondary">
-
-    Get Free Consultation
-
-</a>
-```
-
-</div>
+    <a href="contact.html" class="btn">
+        Get Free Consultation
+    </a>
 
 </section>
+
 
 <!-- ================= FOOTER ================= -->
 
 <footer>
 
-<div class="footer-grid">
+    <div class="footer-grid">
 
-```
-<div>
+        <div>
 
-    <h3>
-        Sarthak Solar Solutions
-    </h3>
+            <div class="footer-logo">
+                Sarthak <span>Solar Solutions</span>
+            </div>
 
-    <p>
-        Clean Energy | Green Future
-    </p>
+            <p>
+                Clean Energy | Green Future
+            </p>
 
-    <p>
-        Complete rooftop solar solutions
-        for homes, businesses and commercial
-        properties.
-    </p>
+            <p>
+                Reliable rooftop solar solutions for homes,
+                businesses and commercial properties.
+            </p>
 
-</div>
+        </div>
 
 
-<div>
+        <div>
 
-    <h3>
-        Quick Links
-    </h3>
+            <div class="footer-title">
+                Quick Links
+            </div>
 
-    <ul>
+            <p>
+                <a href="index.html">Home</a>
+            </p>
 
-        <li>
-            <a href="index.html">
-                Home
+            <p>
+                <a href="about.html">About Us</a>
+            </p>
+
+            <p>
+                <a href="contact.html">Contact</a>
+            </p>
+
+            <p>
+                <a href="contact.html">Get Quote</a>
+            </p>
+
+        </div>
+
+
+        <div class="footer-contact">
+
+            <div class="footer-title">
+                Contact Us
+            </div>
+
+            <a href="tel:+918607606682">
+                Pardeep Kumar: +91 8607606682
             </a>
-        </li>
 
-        <li>
-            <a href="about.html">
-                About Us
+            <a href="tel:+917037190065">
+                Hans Verma: +91 7037190065
             </a>
-        </li>
 
-        <li>
-            <a href="contact.html">
-                Contact
+            <a href="mailto:sarthaksolaarsolutions@gmail.com">
+                sarthaksolaarsolutions@gmail.com
             </a>
-        </li>
 
-    </ul>
+            <p>
+                Palla, Delhi & Surrounding Areas
+            </p>
 
-</div>
+        </div>
+
+    </div>
 
 
-<div>
-
-    <h3>
-        Contact Us
-    </h3>
-
-    <p>
-        Pardeep Kumar:
-        +91 8607606682
-    </p>
-
-    <p>
-        Hans Verma:
-        +91 7037190065
-    </p>
-
-    <p>
-        sarthaksolaarsolutions@gmail.com
-    </p>
-
-    <p>
-        Palla, Delhi & Surrounding Areas
-    </p>
-
-</div>
-```
-
-</div>
-
-<div class="footer-bottom">
-
-```
-© 2026 Sarthak Solar Solutions.
-All Rights Reserved.
-```
-
-</div>
+    <div class="copyright">
+        © 2026 Sarthak Solar Solutions. All Rights Reserved.
+    </div>
 
 </footer>
 
-<!-- ================= FLOATING BUTTONS ================= -->
+
+<!-- ================= FLOATING CONTACT BUTTONS ================= -->
 
 <div class="floating">
 
-```
-<!-- WHATSAPP -->
+    <!-- WhatsApp -->
 
-<a
-class="float-btn whatsapp"
-href="https://wa.me/918607606682?text=Hello%2C%20I%20am%20interested%20in%20a%20free%20solar%20consultation."
-target="_blank"
-aria-label="Chat on WhatsApp">
+    <a
+        class="float-btn whatsapp"
+        href="https://wa.me/918607606682?text=Hello%2C%20I%20am%20interested%20in%20a%20free%20solar%20consultation."
+        target="_blank"
+        aria-label="Chat on WhatsApp"
+    >
 
-    <svg
-    viewBox="0 0 32 32"
-    aria-hidden="true">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
 
-        <path d="M16 3C8.82 3 3 8.82 3 16c0 2.3.6 4.47 1.74 6.4L3.08 29l6.77-1.62A12.93 12.93 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3zm0 23.6c-2.03 0-4.02-.55-5.75-1.6l-.41-.25-4.02.96.98-3.91-.27-.42A10.58 10.58 0 0 1 5.42 16C5.42 10.17 10.17 5.42 16 5.42S26.58 10.17 26.58 16 21.83 26.6 16 26.6zm5.8-7.96c-.32-.16-1.88-.93-2.17-1.04-.29-.1-.5-.16-.71.16-.21.31-.81 1.04-.99 1.25-.18.21-.36.24-.67.08-.32-.16-1.34-.49-2.55-1.57-.94-.84-1.57-1.87-1.75-2.18-.18-.31-.02-.48.14-.64.14-.14.32-.36.47-.54.16-.18.21-.31.32-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.54-.71-.55h-.6c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.64s1.13 3.06 1.29 3.27c.16.21 2.22 3.39 5.38 4.75.75.32 1.34.51 1.8.65.76.24 1.45.21 2 .13.61-.09 1.88-.77 2.15-1.51.26-.74.26-1.38.18-1.51-.08-.13-.29-.21-.61-.36z"/>
+            <path d="M16 3C8.82 3 3 8.82 3 16c0 2.3.6 4.47 1.74 6.4L3.08 29l6.77-1.62A12.93 12.93 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3zm0 23.6c-2.03 0-4.02-.55-5.75-1.6l-.41-.25-4.02.96.98-3.91-.27-.42A10.58 10.58 0 0 1 5.42 16C5.42 10.17 10.17 5.42 16 5.42S26.58 10.17 26.58 16 21.83 26.6 16 26.6zm5.8-7.96c-.32-.16-1.88-.93-2.17-1.04-.29-.1-.5-.16-.71.16-.21.31-.81 1.04-.99 1.25-.18.21-.36.24-.67.08-.32-.16-1.34-.49-2.55-1.57-.94-.84-1.57-1.87-1.75-2.18-.18-.31-.02-.48.14-.64.14-.14.32-.36.47-.54.16-.18.21-.31.32-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.54-.71-.55h-.6c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.64s1.13 3.06 1.29 3.27c.16.21 2.22 3.39 5.38 4.75.75.32 1.34.51 1.8.65.76.24 1.45.21 2 .13.61-.09 1.88-.77 2.15-1.51.26-.74.26-1.38.18-1.51-.08-.13-.29-.21-.61-.36z"/>
 
-    </svg>
+        </svg>
 
-</a>
+    </a>
 
 
-<!-- CALL -->
+    <!-- Call -->
 
-<a
-class="float-btn call"
-href="tel:+918607606682"
-aria-label="Call Sarthak Solar Solutions">
+    <a
+        class="float-btn call"
+        href="tel:+918607606682"
+        aria-label="Call Sarthak Solar Solutions"
+    >
 
-    <svg
-    viewBox="0 0 24 24"
-    aria-hidden="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
 
-        <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
 
-    </svg>
+        </svg>
 
-</a>
-```
+    </a>
 
 </div>
 
