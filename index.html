@@ -37,45 +37,47 @@ header{
     position:sticky;
     top:0;
     z-index:1000;
-    background:rgba(255,255,255,.97);
+    background:rgba(255,255,255,.98);
     box-shadow:0 2px 15px rgba(0,0,0,.08);
 }
 
 .navbar{
     max-width:1200px;
     margin:auto;
-    min-height:78px;
+    min-height:92px;
     padding:8px 20px;
     display:flex;
     align-items:center;
     justify-content:space-between;
 }
 
-/* LOGO */
+/* ================= LOGO ================= */
 
 .logo{
     display:flex;
     align-items:center;
-    gap:8px;
+    gap:10px;
     color:#16833b;
 }
 
-.logo svg{
-    width:58px;
-    height:58px;
+.logo-icon{
+    width:78px;
+    height:78px;
     flex-shrink:0;
+    display:block;
 }
 
 .logo-text{
     display:flex;
     flex-direction:column;
-    line-height:1.1;
+    line-height:1.05;
 }
 
 .logo-text strong{
-    font-size:21px;
-    font-weight:800;
+    font-size:22px;
+    font-weight:900;
     letter-spacing:.5px;
+    color:#16833b;
 }
 
 .logo-text span{
@@ -83,7 +85,7 @@ header{
     font-size:10px;
     font-weight:800;
     letter-spacing:2px;
-    margin-top:4px;
+    margin-top:6px;
 }
 
 nav{
@@ -673,21 +675,22 @@ footer p{
     .process{
         grid-template-columns:1fr 1fr;
     }
-
-    .footer-grid{
-        grid-template-columns:1fr 1fr;
-    }
 }
 
 @media(max-width:600px){
 
     .navbar{
-        padding:7px 12px;
+        min-height:78px;
+        padding:5px 10px;
     }
 
-    .logo svg{
-        width:48px;
-        height:48px;
+    .logo{
+        gap:5px;
+    }
+
+    .logo-icon{
+        width:58px;
+        height:58px;
     }
 
     .logo-text strong{
@@ -696,19 +699,20 @@ footer p{
 
     .logo-text span{
         font-size:7px;
-        letter-spacing:1.3px;
+        letter-spacing:1.2px;
+        margin-top:4px;
     }
 
     nav{
-        gap:10px;
+        gap:8px;
     }
 
     nav a{
-        font-size:11px;
+        font-size:10px;
     }
 
     nav .quote-btn{
-        padding:8px 10px;
+        padding:8px 9px;
     }
 
     .hero{
@@ -805,26 +809,28 @@ footer p{
 <!-- ================= HEADER ================= -->
 
 <header>
+
 <div class="navbar">
 
 <a href="index.html" class="logo">
 
-<!-- PREMIUM SSS SOLAR LOGO -->
+<!-- BIGGER PREMIUM SSS SOLAR ICON -->
 
-<svg width="300" height="110" viewBox="0 0 300 110"
+<svg
+class="logo-icon"
+viewBox="0 0 115 110"
 xmlns="http://www.w3.org/2000/svg"
-aria-label="Sarthak Solar Solutions">
+aria-label="Sarthak Solar Solutions Logo">
 
-<g transform="translate(5,5)">
-
-<!-- Rising Sun -->
-<path d="M18 42 A38 38 0 0 1 94 42"
+<!-- SUN -->
+<path
+d="M18 42 A38 38 0 0 1 94 42"
 fill="none"
 stroke="#F39C12"
 stroke-width="9"
 stroke-linecap="round"/>
 
-<!-- Sun Rays -->
+<!-- SUN RAYS -->
 <g stroke="#F39C12" stroke-width="4" stroke-linecap="round">
 <path d="M28 22 L22 16"/>
 <path d="M43 14 L41 6"/>
@@ -832,47 +838,70 @@ stroke-linecap="round"/>
 <path d="M76 22 L82 16"/>
 </g>
 
-<!-- Solar Panel -->
-<path d="M17 43 Q17 38 23 38 L91 38
-L78 91 Q77 96 71 96 L28 96
-Q23 96 22 91 Z"
+<!-- SOLAR PANEL -->
+<path
+d="M17 43
+Q17 38 23 38
+L91 38
+L78 91
+Q77 96 71 96
+L28 96
+Q23 96 22 91
+Z"
 fill="#16833B"
 stroke="#0D5F2A"
 stroke-width="4"/>
 
-<!-- Panel Grid -->
-<g fill="none" stroke="#8FD19E" stroke-width="2" opacity=".75">
+<!-- PANEL GRID -->
+<g fill="none"
+stroke="#8FD19E"
+stroke-width="2"
+opacity=".75">
+
 <path d="M39 39 L38 95"/>
 <path d="M59 39 L58 95"/>
 <path d="M78 39 L72 95"/>
+
 <path d="M20 55 L87 55"/>
 <path d="M22 72 L83 72"/>
 <path d="M25 87 L79 87"/>
+
 </g>
 
-<!-- SSS -->
+<!-- SSS MONOGRAM -->
 <g fill="none"
 stroke="#FFFFFF"
 stroke-width="6"
 stroke-linecap="round">
 
-<path d="M34 52 C25 46 24 60 34 61 C44 62 43 75 34 72"/>
-<path d="M53 52 C44 46 43 60 53 61 C63 62 62 75 53 72"/>
-<path d="M72 52 C63 46 62 60 72 61 C82 62 81 75 72 72"/>
+<path d="M34 52
+C25 46 24 60 34 61
+C44 62 43 75 34 72"/>
+
+<path d="M53 52
+C44 46 43 60 53 61
+C63 62 62 75 53 72"/>
+
+<path d="M72 52
+C63 46 62 60 72 61
+C82 62 81 75 72 72"/>
 
 </g>
 
-<!-- Leaf -->
-<path d="M72 91 C77 73 91 68 101 70
+<!-- LEAF -->
+<path
+d="M72 91
+C77 73 91 68 101 70
 C98 84 88 94 72 96"
 fill="#35A853"/>
 
-<path d="M75 91 C84 84 91 77 98 72"
+<path
+d="M75 91
+C84 84 91 77 98 72"
 fill="none"
 stroke="#FFFFFF"
 stroke-width="2"/>
 
-</g>
 </svg>
 
 <div class="logo-text">
@@ -882,14 +911,23 @@ stroke-width="2"/>
 
 </a>
 
+
 <nav>
+
 <a href="index.html">Home</a>
+
 <a href="about.html">About</a>
+
 <a href="contact.html">Contact</a>
-<a href="contact.html" class="quote-btn">Get Quote</a>
+
+<a href="contact.html" class="quote-btn">
+Get Quote
+</a>
+
 </nav>
 
 </div>
+
 </header>
 
 
@@ -898,19 +936,25 @@ stroke-width="2"/>
 <section class="hero">
 
 <div class="hero-slides">
+
 <div class="hero-slide"></div>
 <div class="hero-slide"></div>
 <div class="hero-slide"></div>
 <div class="hero-slide"></div>
+
 </div>
 
 <div class="hero-overlay"></div>
 
 <div class="hero-content">
 
-<small>CLEAN ENERGY • GREEN FUTURE</small>
+<small>
+CLEAN ENERGY • GREEN FUTURE
+</small>
 
-<h1>Power Your Future with Solar Energy</h1>
+<h1>
+Power Your Future with Solar Energy
+</h1>
 
 <p>
 Reliable and affordable rooftop solar solutions for homes,
@@ -931,6 +975,7 @@ Call Us
 </div>
 
 </div>
+
 </section>
 
 
@@ -968,10 +1013,13 @@ Call Us
 <div class="container intro">
 
 <div class="intro-image">
+
 <img
 src="https://surdevenergy.com/assets/project-residential-rooftop-DsQ6C9_2.jpg"
 alt="Residential rooftop solar installation">
+
 </div>
+
 
 <div class="intro-content">
 
@@ -992,17 +1040,36 @@ solutions for residential and commercial customers.
 
 <div class="features">
 
-<div class="feature">✓ Reduce Electricity Bills</div>
-<div class="feature">✓ Clean & Renewable Energy</div>
-<div class="feature">✓ Rooftop Solar Solutions</div>
-<div class="feature">✓ Long-Term Energy Savings</div>
-<div class="feature">✓ Professional Installation</div>
-<div class="feature">✓ After-Sales Service</div>
+<div class="feature">
+✓ Reduce Electricity Bills
+</div>
+
+<div class="feature">
+✓ Clean & Renewable Energy
+</div>
+
+<div class="feature">
+✓ Rooftop Solar Solutions
+</div>
+
+<div class="feature">
+✓ Long-Term Energy Savings
+</div>
+
+<div class="feature">
+✓ Professional Installation
+</div>
+
+<div class="feature">
+✓ After-Sales Service
+</div>
 
 </div>
 
 </div>
+
 </div>
+
 </section>
 
 
@@ -1013,91 +1080,155 @@ solutions for residential and commercial customers.
 <div class="container">
 
 <div class="section-title">
-<span>WHAT WE OFFER</span>
-<h2>Our Solar Services</h2>
+
+<span>
+WHAT WE OFFER
+</span>
+
+<h2>
+Our Solar Services
+</h2>
+
 </div>
+
 
 <div class="services">
 
 <div class="service">
-<img src="https://raytones.in/assets/up_solar_rooftop.png"
+
+<img
+src="https://raytones.in/assets/up_solar_rooftop.png"
 alt="Residential Solar">
+
 <div class="service-content">
-<h3>Residential Solar Solutions</h3>
+
+<h3>
+Residential Solar Solutions
+</h3>
+
 <p>
 Rooftop solar systems designed for homes to reduce
 electricity bills and increase energy independence.
 </p>
+
 </div>
+
 </div>
 
 
 <div class="service">
-<img src="https://indiansolarsolution.com/wp-content/uploads/2024/12/Untitled-1-Recovered12478.png"
+
+<img
+src="https://indiansolarsolution.com/wp-content/uploads/2024/12/Untitled-1-Recovered12478.png"
 alt="Commercial Solar">
+
 <div class="service-content">
-<h3>Commercial Solar Solutions</h3>
+
+<h3>
+Commercial Solar Solutions
+</h3>
+
 <p>
 Reliable solar solutions for offices, shops,
 factories and commercial properties.
 </p>
+
 </div>
+
 </div>
 
 
 <div class="service">
-<img src="https://sunlynksolar.com/new_assets/instalation.webp"
+
+<img
+src="https://sunlynksolar.com/new_assets/instalation.webp"
 alt="Solar Installation">
+
 <div class="service-content">
-<h3>Rooftop Solar Installation</h3>
+
+<h3>
+Rooftop Solar Installation
+</h3>
+
 <p>
 Professional installation with proper site planning,
 system design and safe installation practices.
 </p>
+
 </div>
+
 </div>
 
 
 <div class="service">
-<img src="https://myrsolar.com/img/how-to-choose-installer-hero.jpg"
+
+<img
+src="https://myrsolar.com/img/how-to-choose-installer-hero.jpg"
 alt="Solar Maintenance">
+
 <div class="service-content">
-<h3>Solar Maintenance & Repair</h3>
+
+<h3>
+Solar Maintenance & Repair
+</h3>
+
 <p>
 Maintenance and support services to keep your solar
 system performing efficiently.
 </p>
+
 </div>
+
 </div>
 
 
 <div class="service">
-<img src="https://surdevenergy.com/assets/project-residential-rooftop-DsQ6C9_2.jpg"
+
+<img
+src="https://surdevenergy.com/assets/project-residential-rooftop-DsQ6C9_2.jpg"
 alt="Solar Panel Cleaning">
+
 <div class="service-content">
-<h3>Solar Panel Cleaning</h3>
+
+<h3>
+Solar Panel Cleaning
+</h3>
+
 <p>
 Regular panel cleaning helps maintain better solar
 energy generation and system performance.
 </p>
+
 </div>
+
 </div>
 
 
 <div class="service">
-<img src="https://www.joyfulsolarpowersystems.com/img/p9.jpeg"
+
+<img
+src="https://www.joyfulsolarpowersystems.com/img/p9.jpeg"
 alt="Solar Consultation">
+
 <div class="service-content">
-<h3>Site Survey & Consultation</h3>
+
+<h3>
+Site Survey & Consultation
+</h3>
+
 <p>
 Professional assessment of electricity requirements,
 rooftop space and suitable solar solutions.
 </p>
-</div>
+
 </div>
 
 </div>
+
 </div>
+
+</div>
+
 </section>
 
 
@@ -1109,7 +1240,9 @@ rooftop space and suitable solar solutions.
 
 <div>
 
-<span class="pm-badge">GOVERNMENT SOLAR SCHEME</span>
+<span class="pm-badge">
+GOVERNMENT SOLAR SCHEME
+</span>
 
 <h2>
 PM Surya Ghar:<br>
@@ -1117,7 +1250,9 @@ Muft Bijli Yojana
 </h2>
 
 <p>
-<strong>Solar for Every Home | A Brighter Future</strong>
+<strong>
+Solar for Every Home | A Brighter Future
+</strong>
 </p>
 
 <p style="margin-top:12px;">
@@ -1125,6 +1260,7 @@ Eligible residential customers may benefit from government
 support under applicable schemes and prevailing government
 guidelines.
 </p>
+
 
 <div class="process">
 
@@ -1157,6 +1293,7 @@ Support
 
 </div>
 
+
 <div class="pm-image">
 
 <img
@@ -1166,10 +1303,11 @@ alt="Rooftop Solar">
 </div>
 
 </div>
+
 </section>
 
 
-<!-- ================= WHY CHOOSE US ================= -->
+<!-- ================= WHY CHOOSE ================= -->
 
 <section class="section">
 
@@ -1183,24 +1321,40 @@ alt="Professional Solar Installation">
 
 </div>
 
+
 <div class="why-content">
 
-<div class="section-title" style="text-align:left;margin-bottom:30px;">
-<span>WHY SARTHAK SOLAR</span>
-<h2>Why Choose Us?</h2>
+<div class="section-title"
+style="text-align:left;margin-bottom:30px;">
+
+<span>
+WHY SARTHAK SOLAR
+</span>
+
+<h2>
+Why Choose Us?
+</h2>
+
 </div>
 
 
 <div class="why-item">
 
-<div class="why-icon">✓</div>
+<div class="why-icon">
+✓
+</div>
 
 <div>
-<h3>Transparent Guidance</h3>
+
+<h3>
+Transparent Guidance
+</h3>
+
 <p>
 Clear information about your solar requirements,
 system options and installation process.
 </p>
+
 </div>
 
 </div>
@@ -1208,14 +1362,21 @@ system options and installation process.
 
 <div class="why-item">
 
-<div class="why-icon">⚡</div>
+<div class="why-icon">
+⚡
+</div>
 
 <div>
-<h3>Customised Solutions</h3>
+
+<h3>
+Customised Solutions
+</h3>
+
 <p>
 Solar solutions designed according to your
 electricity consumption and rooftop requirements.
 </p>
+
 </div>
 
 </div>
@@ -1223,14 +1384,21 @@ electricity consumption and rooftop requirements.
 
 <div class="why-item">
 
-<div class="why-icon">☀</div>
+<div class="why-icon">
+☀
+</div>
 
 <div>
-<h3>Quality Installation</h3>
+
+<h3>
+Quality Installation
+</h3>
+
 <p>
 Professional installation focused on safety,
 performance and long-term reliability.
 </p>
+
 </div>
 
 </div>
@@ -1238,21 +1406,29 @@ performance and long-term reliability.
 
 <div class="why-item">
 
-<div class="why-icon">★</div>
+<div class="why-icon">
+★
+</div>
 
 <div>
-<h3>After-Sales Support</h3>
+
+<h3>
+After-Sales Support
+</h3>
+
 <p>
 Continued support and maintenance after your
 solar system installation.
 </p>
-</div>
 
 </div>
 
 </div>
 
 </div>
+
+</div>
+
 </section>
 
 
@@ -1260,7 +1436,9 @@ solar system installation.
 
 <section class="cta">
 
-<h2>Ready to Switch to Solar?</h2>
+<h2>
+Ready to Switch to Solar?
+</h2>
 
 <p>
 Get a free consultation and rooftop solar assessment
@@ -1282,7 +1460,9 @@ Get Free Consultation
 
 <div>
 
-<h3>Sarthak Solar Solutions</h3>
+<h3>
+Sarthak Solar Solutions
+</h3>
 
 <p>
 Clean Energy | Green Future
@@ -1298,7 +1478,9 @@ businesses and commercial properties.
 
 <div>
 
-<h3>Contact Us</h3>
+<h3>
+Contact Us
+</h3>
 
 <p>
 <strong>Pardeep Kumar:</strong>
@@ -1319,7 +1501,9 @@ sarthaksolaarsolutions@gmail.com
 
 <div>
 
-<h3>Service Area</h3>
+<h3>
+Service Area
+</h3>
 
 <p>
 Palla, Delhi
@@ -1348,9 +1532,10 @@ All Rights Reserved.
 </footer>
 
 
-<!-- ================= FLOATING BUTTONS ================= -->
+<!-- ================= FLOATING CONTACT BUTTONS ================= -->
 
 <div class="floating">
+
 
 <!-- WHATSAPP -->
 
