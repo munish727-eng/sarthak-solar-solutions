@@ -4,11 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sarthak Solar Solutions | Solar Energy Solutions in Delhi</title>
+<title>Sarthak Solar Solutions | Rooftop Solar Solutions in Delhi</title>
 
 <meta name="description" content="Sarthak Solar Solutions provides residential, commercial and rooftop solar installation, maintenance and consultation services in Delhi.">
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -31,28 +32,29 @@ a{
     color:inherit;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
+
 header{
     position:sticky;
     top:0;
     z-index:1000;
-    background:#ffffff;
-    box-shadow:0 2px 15px rgba(0,0,0,0.08);
+    background:#fff;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
 }
 
 .navbar{
     max-width:1200px;
     margin:auto;
-    padding:16px 20px;
+    padding:15px 20px;
     display:flex;
-    align-items:center;
     justify-content:space-between;
+    align-items:center;
 }
 
 .logo{
     font-size:25px;
     font-weight:800;
-    color:#16823b;
+    color:#14833b;
 }
 
 .logo span{
@@ -61,30 +63,31 @@ header{
 
 .nav-links{
     display:flex;
-    gap:28px;
     align-items:center;
+    gap:28px;
 }
 
 .nav-links a{
     font-weight:600;
     color:#333;
-    transition:0.3s;
+    transition:.3s;
 }
 
 .nav-links a:hover{
-    color:#16823b;
+    color:#14833b;
 }
 
 .nav-btn{
-    background:#16823b;
-    color:white !important;
-    padding:10px 18px;
+    background:#14833b;
+    color:#fff !important;
+    padding:10px 20px;
     border-radius:25px;
 }
 
-/* HERO */
+/* ================= HERO ================= */
+
 .hero{
-    min-height:650px;
+    height:650px;
     position:relative;
     overflow:hidden;
     display:flex;
@@ -102,45 +105,65 @@ header{
     background-size:cover;
     background-position:center;
     opacity:0;
-    animation:slideShow 20s infinite;
+    animation:solarSlider 20s infinite;
 }
 
+/* 1 - INDIAN RESIDENTIAL ROOFTOP */
 .slide:nth-child(1){
-    background-image:url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=2000&q=85");
+    background-image:url("https://raytones.in/assets/up_solar_rooftop.png");
     animation-delay:0s;
 }
 
+/* 2 - ROOFTOP INSTALLATION */
 .slide:nth-child(2){
-    background-image:url("https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=2000&q=85");
+    background-image:url("https://sunlynksolar.com/new_assets/instalation.webp");
     animation-delay:5s;
 }
 
+/* 3 - RESIDENTIAL ROOFTOP AERIAL */
 .slide:nth-child(3){
-    background-image:url("https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=2000&q=85");
+    background-image:url("https://surdevenergy.com/assets/project-residential-rooftop-DsQ6C9_2.jpg");
     animation-delay:10s;
 }
 
+/* 4 - MODERN HOUSE SOLAR */
 .slide:nth-child(4){
-    background-image:url("https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?auto=format&fit=crop&w=2000&q=85");
+    background-image:url("https://www.joyfulsolarpowersystems.com/img/p9.jpeg");
     animation-delay:15s;
 }
 
-@keyframes slideShow{
-    0%{opacity:0;}
-    5%{opacity:1;}
-    25%{opacity:1;}
-    30%{opacity:0;}
-    100%{opacity:0;}
+@keyframes solarSlider{
+
+    0%{
+        opacity:0;
+    }
+
+    5%{
+        opacity:1;
+    }
+
+    25%{
+        opacity:1;
+    }
+
+    30%{
+        opacity:0;
+    }
+
+    100%{
+        opacity:0;
+    }
 }
 
 .hero-overlay{
     position:absolute;
     inset:0;
-    background:linear-gradient(
+    background:
+    linear-gradient(
         90deg,
-        rgba(0,0,0,0.72),
-        rgba(0,0,0,0.40),
-        rgba(0,0,0,0.15)
+        rgba(0,0,0,.76),
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.12)
     );
 }
 
@@ -150,49 +173,50 @@ header{
     max-width:1200px;
     width:100%;
     margin:auto;
-    padding:70px 20px;
-    color:white;
+    padding:50px 20px;
+    color:#fff;
 }
 
-.hero-content small{
+.hero-badge{
     display:inline-block;
     background:#f39c12;
-    padding:7px 15px;
-    border-radius:25px;
+    padding:7px 17px;
+    border-radius:30px;
+    font-size:14px;
     font-weight:bold;
-    margin-bottom:18px;
+    margin-bottom:20px;
 }
 
-.hero-content h1{
-    font-size:58px;
-    line-height:1.1;
-    max-width:750px;
+.hero h1{
+    font-size:60px;
+    line-height:1.08;
+    max-width:760px;
     margin-bottom:22px;
 }
 
-.hero-content h1 span{
+.hero h1 span{
     color:#ffd45a;
 }
 
-.hero-content p{
+.hero p{
     max-width:650px;
     font-size:19px;
-    margin-bottom:30px;
     color:#f2f2f2;
+    margin-bottom:30px;
 }
 
 .hero-buttons{
     display:flex;
-    gap:15px;
+    gap:14px;
     flex-wrap:wrap;
 }
 
 .btn{
     display:inline-block;
-    padding:14px 25px;
+    padding:14px 26px;
     border-radius:30px;
     font-weight:bold;
-    transition:0.3s;
+    transition:.3s;
 }
 
 .btn-primary{
@@ -206,37 +230,38 @@ header{
 }
 
 .btn-secondary{
-    background:#16823b;
+    background:#14833b;
     color:#fff;
 }
 
 .btn-secondary:hover{
-    background:#10662d;
+    background:#0c642d;
     transform:translateY(-2px);
 }
 
-/* STATS */
+/* ================= STATS ================= */
+
 .stats{
     max-width:1100px;
     margin:-55px auto 0;
     position:relative;
     z-index:10;
+    padding:0 20px;
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:15px;
-    padding:0 20px;
 }
 
 .stat{
     background:#fff;
-    padding:25px 15px;
     text-align:center;
-    border-radius:12px;
-    box-shadow:0 8px 30px rgba(0,0,0,0.12);
+    padding:25px 15px;
+    border-radius:14px;
+    box-shadow:0 8px 30px rgba(0,0,0,.12);
 }
 
 .stat h2{
-    color:#16823b;
+    color:#14833b;
     font-size:30px;
 }
 
@@ -245,7 +270,8 @@ header{
     font-size:14px;
 }
 
-/* GENERAL */
+/* ================= GENERAL ================= */
+
 section{
     padding:80px 20px;
 }
@@ -261,8 +287,8 @@ section{
 }
 
 .section-title h2{
+    color:#14833b;
     font-size:38px;
-    color:#16823b;
     margin-bottom:10px;
 }
 
@@ -272,35 +298,53 @@ section{
     color:#666;
 }
 
-/* INTRO */
+/* ================= INTRO ================= */
+
 .intro{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:50px;
+    gap:55px;
     align-items:center;
+}
+
+.intro-image{
+    position:relative;
 }
 
 .intro-image img{
     width:100%;
-    height:420px;
+    height:430px;
     object-fit:cover;
-    border-radius:18px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    border-radius:20px;
+    box-shadow:0 12px 35px rgba(0,0,0,.15);
+}
+
+.image-label{
+    position:absolute;
+    left:20px;
+    bottom:20px;
+    background:#14833b;
+    color:#fff;
+    padding:10px 17px;
+    border-radius:25px;
+    font-weight:bold;
 }
 
 .intro-text h2{
     font-size:40px;
-    color:#16823b;
+    color:#14833b;
+    line-height:1.2;
     margin-bottom:18px;
 }
 
 .intro-text p{
     color:#555;
-    margin-bottom:20px;
+    margin-bottom:17px;
 }
 
 .check-list{
     list-style:none;
+    margin-top:20px;
 }
 
 .check-list li{
@@ -310,14 +354,15 @@ section{
 
 .check-list li::before{
     content:"✓";
-    color:#16823b;
+    color:#14833b;
     font-weight:bold;
     margin-right:10px;
 }
 
-/* SERVICES */
+/* ================= SERVICES ================= */
+
 .services{
-    background:#f6faf7;
+    background:#f5faf7;
 }
 
 .service-grid{
@@ -327,21 +372,21 @@ section{
 }
 
 .service-card{
-    background:white;
-    border-radius:15px;
+    background:#fff;
+    border-radius:17px;
     overflow:hidden;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
-    transition:0.3s;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
 }
 
 .service-card:hover{
     transform:translateY(-7px);
-    box-shadow:0 12px 30px rgba(0,0,0,0.13);
+    box-shadow:0 12px 30px rgba(0,0,0,.14);
 }
 
 .service-card img{
     width:100%;
-    height:210px;
+    height:220px;
     object-fit:cover;
 }
 
@@ -350,9 +395,9 @@ section{
 }
 
 .service-content h3{
-    color:#16823b;
-    margin-bottom:10px;
+    color:#14833b;
     font-size:21px;
+    margin-bottom:9px;
 }
 
 .service-content p{
@@ -360,70 +405,75 @@ section{
     font-size:15px;
 }
 
-/* PM SURYA GHAR */
+/* ================= PM SURYA GHAR ================= */
+
 .pm-section{
-    background:linear-gradient(135deg,#16823b,#0c5c2a);
-    color:white;
+    background:
+    linear-gradient(135deg,#116f32,#168b43);
+    color:#fff;
 }
 
 .pm-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:55px;
+    align-items:center;
+}
+
+.pm-content h2{
+    font-size:40px;
+    line-height:1.2;
+    margin-bottom:18px;
+}
+
+.pm-content p{
+    color:#e9f5ec;
+    margin-bottom:18px;
+}
+
+.process{
+    display:grid;
+    gap:13px;
+}
+
+.process div{
+    background:rgba(255,255,255,.12);
+    padding:15px 20px;
+    border-radius:10px;
+}
+
+.process strong{
+    color:#ffd45a;
+    margin-right:7px;
+}
+
+/* ================= WHY ================= */
+
+.why-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:50px;
     align-items:center;
 }
 
-.pm-content h2{
-    font-size:40px;
-    margin-bottom:18px;
-}
-
-.pm-content p{
-    margin-bottom:20px;
-    color:#eaf7ee;
-}
-
-.process{
-    display:grid;
-    gap:12px;
-}
-
-.process div{
-    background:rgba(255,255,255,0.12);
-    padding:14px 18px;
-    border-radius:10px;
-}
-
-.process strong{
-    color:#ffd45a;
-}
-
-/* WHY US */
-.why-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:45px;
-    align-items:center;
-}
-
 .why-image img{
     width:100%;
-    height:400px;
+    height:420px;
     object-fit:cover;
-    border-radius:18px;
+    border-radius:20px;
 }
 
 .why-list{
     display:grid;
-    gap:18px;
+    gap:17px;
 }
 
 .why-item{
     display:flex;
     gap:15px;
+    background:#f6faf7;
     padding:18px;
     border-radius:12px;
-    background:#f7faf8;
 }
 
 .why-icon{
@@ -431,20 +481,25 @@ section{
 }
 
 .why-item h3{
-    color:#16823b;
+    color:#14833b;
     margin-bottom:4px;
 }
 
-/* CTA */
+.why-item p{
+    color:#666;
+}
+
+/* ================= CTA ================= */
+
 .cta{
     background:#f39c12;
+    color:#fff;
     text-align:center;
-    color:white;
 }
 
 .cta h2{
     font-size:40px;
-    margin-bottom:15px;
+    margin-bottom:12px;
 }
 
 .cta p{
@@ -452,10 +507,11 @@ section{
     margin:0 auto 25px;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
+
 footer{
-    background:#111;
-    color:white;
+    background:#101410;
+    color:#fff;
     padding:55px 20px 25px;
 }
 
@@ -463,7 +519,7 @@ footer{
     max-width:1200px;
     margin:auto;
     display:grid;
-    grid-template-columns:2fr 1fr 1fr;
+    grid-template-columns:2fr 1fr 1.4fr;
     gap:40px;
 }
 
@@ -474,7 +530,7 @@ footer h3{
 
 footer p,
 footer li{
-    color:#bbb;
+    color:#aaa;
     margin-bottom:8px;
 }
 
@@ -486,12 +542,14 @@ footer ul{
     max-width:1200px;
     margin:35px auto 0;
     padding-top:20px;
-    border-top:1px solid #333;
+    border-top:1px solid #303530;
     text-align:center;
-    color:#888;
+    color:#777;
+    font-size:14px;
 }
 
-/* FLOATING BUTTONS */
+/* ================= FLOATING ================= */
+
 .floating{
     position:fixed;
     right:20px;
@@ -503,15 +561,15 @@ footer ul{
 }
 
 .float-btn{
-    width:52px;
-    height:52px;
+    width:54px;
+    height:54px;
     border-radius:50%;
     display:flex;
     justify-content:center;
     align-items:center;
-    color:white;
-    font-size:23px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.25);
+    color:#fff;
+    font-size:24px;
+    box-shadow:0 5px 18px rgba(0,0,0,.25);
 }
 
 .whatsapp{
@@ -519,10 +577,11 @@ footer ul{
 }
 
 .call{
-    background:#16823b;
+    background:#14833b;
 }
 
-/* MOBILE */
+/* ================= TABLET ================= */
+
 @media(max-width:900px){
 
     .nav-links{
@@ -534,16 +593,16 @@ footer ul{
     }
 
     .hero{
-        min-height:600px;
+        height:600px;
     }
 
-    .hero-content h1{
-        font-size:42px;
+    .hero h1{
+        font-size:45px;
     }
 
     .stats{
         grid-template-columns:repeat(2,1fr);
-        margin-top:-35px;
+        margin-top:-40px;
     }
 
     .intro,
@@ -561,22 +620,36 @@ footer ul{
     }
 }
 
+/* ================= MOBILE ================= */
+
 @media(max-width:600px){
 
-    section{
-        padding:60px 18px;
+    .navbar{
+        padding:14px 15px;
+    }
+
+    .logo{
+        font-size:20px;
+    }
+
+    .hero{
+        height:590px;
     }
 
     .hero-content{
-        padding:60px 18px;
+        padding:50px 18px;
     }
 
-    .hero-content h1{
+    .hero h1{
         font-size:37px;
     }
 
-    .hero-content p{
+    .hero p{
         font-size:16px;
+    }
+
+    section{
+        padding:60px 18px;
     }
 
     .section-title h2{
@@ -587,6 +660,11 @@ footer ul{
     .pm-content h2,
     .cta h2{
         font-size:30px;
+    }
+
+    .intro-image img,
+    .why-image img{
+        height:330px;
     }
 
     .service-grid{
@@ -610,44 +688,53 @@ footer ul{
         grid-template-columns:1fr;
     }
 
-    .navbar{
-        padding:14px 15px;
+    .floating{
+        right:15px;
+        bottom:15px;
     }
 
-    .logo{
-        font-size:20px;
-    }
 }
+
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
+<!-- ================= HEADER ================= -->
+
 <header>
-    <div class="navbar">
 
-        <div class="logo">
-            Sarthak <span>Solar Solutions</span>
-        </div>
+<div class="navbar">
 
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="contact.html" class="nav-btn">Get Quote</a>
-        </nav>
-
+    <div class="logo">
+        Sarthak <span>Solar Solutions</span>
     </div>
+
+    <nav class="nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="contact.html" class="nav-btn">
+            Get Quote
+        </a>
+
+    </nav>
+
+</div>
+
 </header>
 
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
+
 <section class="hero">
 
     <div class="hero-slides">
 
-        <!-- ROOFTOP SOLAR - MAIN IMAGE -->
         <div class="slide"></div>
 
         <div class="slide"></div>
@@ -660,9 +747,12 @@ footer ul{
 
     <div class="hero-overlay"></div>
 
+
     <div class="hero-content">
 
-        <small>☀️ CLEAN ENERGY | GREEN FUTURE</small>
+        <div class="hero-badge">
+            ☀️ CLEAN ENERGY • GREEN FUTURE
+        </div>
 
         <h1>
             Power Your Future with
@@ -670,18 +760,23 @@ footer ul{
         </h1>
 
         <p>
-            Reliable and affordable rooftop solar solutions for
-            homes, businesses and commercial properties.
-            Reduce your electricity bills and move towards a cleaner future.
+            Reliable and affordable rooftop solar solutions
+            for homes, businesses and commercial properties.
+            Reduce your electricity bills and move towards
+            cleaner energy.
         </p>
 
         <div class="hero-buttons">
 
-            <a href="contact.html" class="btn btn-primary">
+            <a
+            href="contact.html"
+            class="btn btn-primary">
                 Get Free Consultation
             </a>
 
-            <a href="tel:+918607606682" class="btn btn-secondary">
+            <a
+            href="tel:+918607606682"
+            class="btn btn-secondary">
                 📞 Call Us
             </a>
 
@@ -692,7 +787,8 @@ footer ul{
 </section>
 
 
-<!-- STATS -->
+<!-- ================= STATS ================= -->
+
 <div class="stats">
 
     <div class="stat">
@@ -718,471 +814,602 @@ footer ul{
 </div>
 
 
-<!-- INTRO -->
+<!-- ================= INTRO ================= -->
+
 <section>
 
-    <div class="container intro">
+<div class="container intro">
 
-        <div class="intro-image">
+    <div class="intro-image">
 
-            <img
-            src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1200&q=85"
-            alt="Rooftop solar panels installed on a building">
+        <img
+        src="https://surdevenergy.com/assets/project-residential-rooftop-DsQ6C9_2.jpg"
+        alt="Residential rooftop solar installation">
 
-        </div>
-
-        <div class="intro-text">
-
-            <h2>Go Solar. Save More on Electricity.</h2>
-
-            <p>
-                Solar energy can help reduce your long-term electricity
-                expenses while giving you access to clean and renewable energy.
-            </p>
-
-            <p>
-                At <strong>Sarthak Solar Solutions</strong>, we provide
-                complete rooftop solar solutions for residential and
-                commercial customers.
-            </p>
-
-            <p>
-                Our team helps you understand your electricity requirements,
-                rooftop space and suitable solar system before installation.
-            </p>
-
-            <ul class="check-list">
-
-                <li>Reduce Electricity Bills</li>
-                <li>Clean & Renewable Energy</li>
-                <li>Rooftop Solar Solutions</li>
-                <li>Long-Term Energy Savings</li>
-                <li>Professional Installation & Service</li>
-
-            </ul>
-
+        <div class="image-label">
+            🏠 Residential Rooftop Solar
         </div>
 
     </div>
 
-</section>
 
+    <div class="intro-text">
 
-<!-- SERVICES -->
-<section class="services">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <h2>Our Solar Services</h2>
-
-            <p>
-                Complete solar solutions designed for homes,
-                offices, shops and commercial properties.
-            </p>
-
-        </div>
-
-
-        <div class="service-grid">
-
-            <div class="service-card">
-
-                <img
-                src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=1000&q=85"
-                alt="Residential solar solution">
-
-                <div class="service-content">
-
-                    <h3>Residential Solar Solutions</h3>
-
-                    <p>
-                        Rooftop solar systems for homes designed
-                        to reduce electricity expenses and provide
-                        clean energy.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <img
-                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1000&q=85"
-                alt="Commercial solar installation">
-
-                <div class="service-content">
-
-                    <h3>Commercial Solar Solutions</h3>
-
-                    <p>
-                        Solar solutions for offices, shops,
-                        warehouses and commercial properties.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <img
-                src="https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?auto=format&fit=crop&w=1000&q=85"
-                alt="Rooftop solar installation">
-
-                <div class="service-content">
-
-                    <h3>Rooftop Solar Installation</h3>
-
-                    <p>
-                        Complete rooftop solar installation
-                        from site assessment to system setup.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <img
-                src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1000&q=85"
-                alt="Solar maintenance">
-
-                <div class="service-content">
-
-                    <h3>Solar Maintenance & Repair</h3>
-
-                    <p>
-                        Maintenance and troubleshooting support
-                        to keep your solar system performing properly.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <img
-                src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1000&q=85"
-                alt="Solar panel cleaning">
-
-                <div class="service-content">
-
-                    <h3>Solar Panel Cleaning</h3>
-
-                    <p>
-                        Professional solar panel cleaning to
-                        maintain system performance and efficiency.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <img
-                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1000&q=85"
-                alt="Solar consultation">
-
-                <div class="service-content">
-
-                    <h3>Site Survey & Consultation</h3>
-
-                    <p>
-                        We assess your electricity usage and
-                        rooftop conditions to suggest a suitable solution.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- PM SURYA GHAR -->
-<section class="pm-section">
-
-    <div class="container pm-content">
-
-        <div>
-
-            <h2>☀️ PM Surya Ghar: Muft Bijli Yojana</h2>
-
-            <p>
-                Solar for Every Home. A Brighter Future.
-            </p>
-
-            <p>
-                Eligible residential customers may benefit from
-                government support under applicable schemes and
-                prevailing government guidelines.
-            </p>
-
-            <a href="contact.html" class="btn btn-primary">
-                Check Your Solar Requirement
-            </a>
-
-        </div>
-
-
-        <div class="process">
-
-            <div>
-                <strong>01.</strong> Contact Us
-            </div>
-
-            <div>
-                <strong>02.</strong> Site Assessment
-            </div>
-
-            <div>
-                <strong>03.</strong> Solar System Planning
-            </div>
-
-            <div>
-                <strong>04.</strong> Installation
-            </div>
-
-            <div>
-                <strong>05.</strong> After-Sales Support
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- WHY CHOOSE US -->
-<section>
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <h2>Why Choose Sarthak Solar Solutions?</h2>
-
-            <p>
-                Professional guidance and complete support
-                from consultation to after-sales service.
-            </p>
-
-        </div>
-
-
-        <div class="why-grid">
-
-            <div class="why-image">
-
-                <img
-                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=85"
-                alt="Solar panels on rooftop">
-
-            </div>
-
-
-            <div class="why-list">
-
-                <div class="why-item">
-
-                    <div class="why-icon">☀️</div>
-
-                    <div>
-
-                        <h3>Transparent Guidance</h3>
-
-                        <p>
-                            Clear information about your solar
-                            requirements and installation process.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="why-item">
-
-                    <div class="why-icon">🏠</div>
-
-                    <div>
-
-                        <h3>Customised Solutions</h3>
-
-                        <p>
-                            Solar systems planned according to
-                            your electricity usage and available space.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="why-item">
-
-                    <div class="why-icon">🔧</div>
-
-                    <div>
-
-                        <h3>Quality Installation</h3>
-
-                        <p>
-                            Professional installation with attention
-                            to safety and system performance.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="why-item">
-
-                    <div class="why-icon">🤝</div>
-
-                    <div>
-
-                        <h3>After-Sales Support</h3>
-
-                        <p>
-                            Continued support for maintenance,
-                            cleaning and service requirements.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- CTA -->
-<section class="cta">
-
-    <div class="container">
-
-        <h2>Ready to Switch to Solar?</h2>
+        <h2>
+            Go Solar. Save More on Electricity.
+        </h2>
 
         <p>
-            Get in touch with Sarthak Solar Solutions
-            for a free consultation and rooftop solar assessment.
+            Solar energy can help reduce long-term
+            electricity expenses while providing
+            clean and renewable energy.
         </p>
 
-        <a href="contact.html" class="btn btn-secondary">
-            Get Free Consultation
+        <p>
+            At <strong>Sarthak Solar Solutions</strong>,
+            we provide complete rooftop solar solutions
+            for residential and commercial customers.
+        </p>
+
+        <p>
+            We assess your electricity requirements,
+            rooftop space and suitable system before
+            installation.
+        </p>
+
+        <ul class="check-list">
+
+            <li>Reduce Electricity Bills</li>
+
+            <li>Clean & Renewable Energy</li>
+
+            <li>Rooftop Solar Solutions</li>
+
+            <li>Long-Term Energy Savings</li>
+
+            <li>Professional Installation & Service</li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services">
+
+<div class="container">
+
+    <div class="section-title">
+
+        <h2>Our Solar Services</h2>
+
+        <p>
+            Complete solar solutions for homes,
+            offices, shops and commercial properties.
+        </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+
+        <!-- SERVICE 1 -->
+
+        <div class="service-card">
+
+            <img
+            src="https://raytones.in/assets/up_solar_rooftop.png"
+            alt="Residential rooftop solar">
+
+            <div class="service-content">
+
+                <h3>
+                    Residential Solar Solutions
+                </h3>
+
+                <p>
+                    Rooftop solar systems for homes
+                    designed to reduce electricity
+                    expenses and provide clean energy.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- SERVICE 2 -->
+
+        <div class="service-card">
+
+            <img
+            src="https://indiansolarsolution.com/wp-content/uploads/2024/12/Untitled-1-Recovered12478.png"
+            alt="Commercial rooftop solar">
+
+            <div class="service-content">
+
+                <h3>
+                    Commercial Solar Solutions
+                </h3>
+
+                <p>
+                    Solar solutions for offices,
+                    shops, warehouses and commercial
+                    properties.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- SERVICE 3 -->
+
+        <div class="service-card">
+
+            <img
+            src="https://sunlynksolar.com/new_assets/instalation.webp"
+            alt="Solar panel installation">
+
+            <div class="service-content">
+
+                <h3>
+                    Rooftop Solar Installation
+                </h3>
+
+                <p>
+                    Complete rooftop solar installation
+                    from site assessment to system setup.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- SERVICE 4 -->
+
+        <div class="service-card">
+
+            <img
+            src="https://myrsolar.com/img/how-to-choose-installer-hero.jpg"
+            alt="Solar technician installation">
+
+            <div class="service-content">
+
+                <h3>
+                    Solar Maintenance & Repair
+                </h3>
+
+                <p>
+                    Maintenance and troubleshooting
+                    support to keep your solar system
+                    performing properly.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- SERVICE 5 -->
+
+        <div class="service-card">
+
+            <img
+            src="https://surdevenergy.com/assets/project-residential-rooftop-DsQ6C9_2.jpg"
+            alt="Solar panels rooftop">
+
+            <div class="service-content">
+
+                <h3>
+                    Solar Panel Cleaning
+                </h3>
+
+                <p>
+                    Regular panel cleaning helps maintain
+                    system performance and efficiency.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- SERVICE 6 -->
+
+        <div class="service-card">
+
+            <img
+            src="https://www.joyfulsolarpowersystems.com/img/p9.jpeg"
+            alt="Solar consultation">
+
+            <div class="service-content">
+
+                <h3>
+                    Site Survey & Consultation
+                </h3>
+
+                <p>
+                    We assess electricity usage and
+                    rooftop conditions to suggest a
+                    suitable solar solution.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PM SURYA GHAR ================= -->
+
+<section class="pm-section">
+
+<div class="container pm-content">
+
+    <div>
+
+        <h2>
+            ☀️ PM Surya Ghar:
+            Muft Bijli Yojana
+        </h2>
+
+        <p>
+            Solar for Every Home | A Brighter Future
+        </p>
+
+        <p>
+            Eligible residential customers may benefit
+            from government support under applicable
+            schemes and prevailing government guidelines.
+        </p>
+
+        <a
+        href="contact.html"
+        class="btn btn-primary">
+
+            Check Your Solar Requirement
+
         </a>
 
     </div>
 
+
+    <div class="process">
+
+        <div>
+            <strong>01.</strong>
+            Contact Us
+        </div>
+
+        <div>
+            <strong>02.</strong>
+            Site Assessment
+        </div>
+
+        <div>
+            <strong>03.</strong>
+            Solar System Planning
+        </div>
+
+        <div>
+            <strong>04.</strong>
+            Installation
+        </div>
+
+        <div>
+            <strong>05.</strong>
+            After-Sales Support
+        </div>
+
+    </div>
+
+</div>
+
 </section>
 
 
-<!-- FOOTER -->
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section>
+
+<div class="container">
+
+    <div class="section-title">
+
+        <h2>
+            Why Choose Sarthak Solar Solutions?
+        </h2>
+
+        <p>
+            Professional guidance and complete support
+            from consultation to after-sales service.
+        </p>
+
+    </div>
+
+
+    <div class="why-grid">
+
+
+        <div class="why-image">
+
+            <img
+            src="https://sunlynksolar.com/new_assets/instalation.webp"
+            alt="Professional solar installation">
+
+        </div>
+
+
+        <div class="why-list">
+
+
+            <div class="why-item">
+
+                <div class="why-icon">
+                    ☀️
+                </div>
+
+                <div>
+
+                    <h3>
+                        Transparent Guidance
+                    </h3>
+
+                    <p>
+                        Clear information about your
+                        solar requirements and installation
+                        process.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="why-item">
+
+                <div class="why-icon">
+                    🏠
+                </div>
+
+                <div>
+
+                    <h3>
+                        Customised Solutions
+                    </h3>
+
+                    <p>
+                        Solar systems planned according
+                        to electricity usage and available
+                        rooftop space.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="why-item">
+
+                <div class="why-icon">
+                    🔧
+                </div>
+
+                <div>
+
+                    <h3>
+                        Quality Installation
+                    </h3>
+
+                    <p>
+                        Professional installation with
+                        attention to safety and system
+                        performance.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="why-item">
+
+                <div class="why-icon">
+                    🤝
+                </div>
+
+                <div>
+
+                    <h3>
+                        After-Sales Support
+                    </h3>
+
+                    <p>
+                        Continued support for maintenance,
+                        cleaning and service requirements.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+<div class="container">
+
+    <h2>
+        Ready to Switch to Solar?
+    </h2>
+
+    <p>
+        Get in touch with Sarthak Solar Solutions
+        for a free consultation and rooftop solar assessment.
+    </p>
+
+    <a
+    href="contact.html"
+    class="btn btn-secondary">
+
+        Get Free Consultation
+
+    </a>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
 <footer>
 
-    <div class="footer-grid">
-
-        <div>
-
-            <h3>Sarthak Solar Solutions</h3>
-
-            <p>
-                Clean Energy | Green Future
-            </p>
-
-            <p>
-                Complete rooftop solar solutions for homes,
-                businesses and commercial properties.
-            </p>
-
-        </div>
+<div class="footer-grid">
 
 
-        <div>
+    <div>
 
-            <h3>Quick Links</h3>
+        <h3>
+            Sarthak Solar Solutions
+        </h3>
 
-            <ul>
+        <p>
+            Clean Energy | Green Future
+        </p>
 
-                <li><a href="index.html">Home</a></li>
-
-                <li><a href="about.html">About Us</a></li>
-
-                <li><a href="contact.html">Contact</a></li>
-
-            </ul>
-
-        </div>
-
-
-        <div>
-
-            <h3>Contact Us</h3>
-
-            <p>📞 Pardeep Kumar: +91 8607606682</p>
-
-            <p>📞 Hans Verma: +91 7037190065</p>
-
-            <p>✉️ sarthaksolaarsolutions@gmail.com</p>
-
-            <p>📍 Palla, Delhi & Surrounding Areas</p>
-
-        </div>
+        <p>
+            Complete rooftop solar solutions
+            for homes, businesses and commercial
+            properties.
+        </p>
 
     </div>
 
 
-    <div class="footer-bottom">
+    <div>
 
-        © 2026 Sarthak Solar Solutions. All Rights Reserved.
+        <h3>
+            Quick Links
+        </h3>
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
 
     </div>
+
+
+    <div>
+
+        <h3>
+            Contact Us
+        </h3>
+
+        <p>
+            📞 Pardeep Kumar:
+            +91 8607606682
+        </p>
+
+        <p>
+            📞 Hans Verma:
+            +91 7037190065
+        </p>
+
+        <p>
+            ✉️ sarthaksolaarsolutions@gmail.com
+        </p>
+
+        <p>
+            📍 Palla, Delhi &
+            Surrounding Areas
+        </p>
+
+    </div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+
+    © 2026 Sarthak Solar Solutions.
+    All Rights Reserved.
+
+</div>
 
 </footer>
 
 
-<!-- FLOATING BUTTONS -->
+<!-- ================= FLOATING BUTTONS ================= -->
+
 <div class="floating">
+
 
     <a
     class="float-btn whatsapp"
     href="https://wa.me/918607606682?text=Hello%2C%20I%20am%20interested%20in%20a%20free%20solar%20consultation."
     target="_blank"
     aria-label="WhatsApp">
+
         💬
+
     </a>
+
 
     <a
     class="float-btn call"
     href="tel:+918607606682"
     aria-label="Call">
+
         📞
+
     </a>
 
+
 </div>
+
 
 </body>
 </html>
