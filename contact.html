@@ -1,146 +1,1276 @@
-```html
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Contact Us | Sarthak Solar Solutions</title>
-<meta name="description" content="Contact Sarthak Solar Solutions for residential and commercial solar installation, rooftop solar consultation, maintenance and subsidy guidance in Delhi.">
+
+<meta name="description" content="Contact Sarthak Solar Solutions for rooftop solar installation, residential solar, commercial solar and free solar consultation in Delhi.">
 
 <style>
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-    background:#f7faf8;
-    color:#1b2a22;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f6faf7;
+    color:#222;
     line-height:1.6;
 }
 
-/* HEADER */
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* ================= HEADER ================= */
+
 header{
-    background:#ffffff;
-    padding:18px 7%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
     position:sticky;
     top:0;
     z-index:1000;
-    box-shadow:0 2px 15px rgba(0,0,0,0.08);
+    background:#ffffff;
+    box-shadow:0 3px 18px rgba(0,0,0,0.08);
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    padding:16px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 .logo{
-    font-size:24px;
+    font-size:25px;
     font-weight:800;
-    color:#16803b;
+    color:#14833b;
 }
 
 .logo span{
     color:#f39c12;
 }
 
-nav a{
-    text-decoration:none;
-    color:#26352d;
-    margin-left:28px;
-    font-weight:600;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#16803b;
-}
-
-/* HERO */
-.contact-hero{
-    min-height:360px;
+.nav-links{
     display:flex;
     align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:60px 20px;
+    gap:28px;
+}
+
+.nav-links a{
+    font-weight:600;
+    color:#333;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#14833b;
+}
+
+.nav-btn{
+    background:#14833b;
+    color:white !important;
+    padding:10px 20px;
+    border-radius:25px;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:430px;
+    position:relative;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+
     background:
-    linear-gradient(rgba(5,40,20,.70),rgba(5,40,20,.70)),
-    url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1800&q=85")
-    center/cover;
+    linear-gradient(
+        rgba(0,45,20,0.78),
+        rgba(0,30,15,0.62)
+    ),
+    url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=2000&q=85");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:70px 20px;
     color:white;
 }
 
-.contact-hero h1{
-    font-size:48px;
+.hero-badge{
+    display:inline-block;
+    background:#f39c12;
+    padding:7px 16px;
+    border-radius:25px;
+    font-weight:bold;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    font-size:52px;
+    line-height:1.1;
     margin-bottom:15px;
 }
 
-.contact-hero p{
-    font-size:19px;
+.hero h1 span{
+    color:#ffd45a;
+}
+
+.hero p{
+    max-width:650px;
+    font-size:18px;
+    color:#e8f4ec;
+}
+
+/* ================= MAIN ================= */
+
+.contact-section{
+    max-width:1200px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-heading h2{
+    font-size:38px;
+    color:#14833b;
+    margin-bottom:10px;
+}
+
+.section-heading p{
+    color:#666;
     max-width:700px;
     margin:auto;
 }
 
-/* CONTACT SECTION */
-.contact-section{
-    padding:70px 7%;
-}
+/* ================= CONTACT GRID ================= */
 
-.contact-container{
-    max-width:1200px;
-    margin:auto;
+.contact-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:35px;
+    grid-template-columns:0.9fr 1.1fr;
+    gap:30px;
 }
 
-/* CARDS */
-.contact-card{
-    background:white;
+/* ================= INFO CARD ================= */
+
+.contact-info{
+    background:linear-gradient(145deg,#116f32,#168c43);
+    color:white;
+    border-radius:20px;
     padding:35px;
-    border-radius:18px;
-    box-shadow:0 8px 30px rgba(0,0,0,.08);
+    box-shadow:0 12px 35px rgba(0,0,0,0.12);
 }
 
-.contact-card h2{
-    font-size:28px;
-    margin-bottom:12px;
-    color:#16803b;
+.contact-info h2{
+    font-size:30px;
+    margin-bottom:10px;
 }
 
-.contact-card .intro{
-    color:#66736b;
+.contact-info > p{
+    color:#dcefe2;
     margin-bottom:28px;
 }
 
-/* INFO */
-.info-box{
+.info-item{
     display:flex;
+    gap:16px;
+    margin:22px 0;
     align-items:flex-start;
-    gap:18px;
-    padding:18px 0;
-    border-bottom:1px solid #edf1ee;
 }
 
-.info-box:last-child{
-    border-bottom:none;
-}
-
-.icon{
-    width:48px;
-    height:48px;
-    background:#eaf7ee;
+.info-icon{
+    min-width:45px;
+    height:45px;
     border-radius:50%;
+    background:rgba(255,255,255,0.14);
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:22px;
-    flex-shrink:0;
+    font-size:21px;
 }
 
-.info-box h3{
-    font-size:17px;
-    margi
+.info-item h4{
+    color:#ffd45a;
+    margin-bottom:3px;
+}
+
+.info-item p{
+    color:#f2f7f3;
+    font-size:15px;
+}
+
+.contact-actions{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.action-btn{
+    padding:12px 19px;
+    border-radius:25px;
+    font-weight:bold;
+}
+
+.call-btn{
+    background:#f39c12;
+    color:white;
+}
+
+.whatsapp-btn{
+    background:#25D366;
+    color:white;
+}
+
+/* ================= FORM ================= */
+
+.contact-form{
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 12px 35px rgba(0,0,0,0.09);
+}
+
+.contact-form h2{
+    color:#14833b;
+    font-size:30px;
+    margin-bottom:8px;
+}
+
+.form-subtitle{
+    color:#777;
+    margin-bottom:25px;
+}
+
+.form-group{
+    margin-bottom:18px;
+}
+
+.form-group label{
+    display:block;
+    font-weight:bold;
+    margin-bottom:7px;
+    color:#333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:14px 15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:15px;
+    font-family:inherit;
+    outline:none;
+    transition:0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:#14833b;
+    box-shadow:0 0 0 3px rgba(20,131,59,0.08);
+}
+
+.form-group textarea{
+    min-height:125px;
+    resize:vertical;
+}
+
+.submit-btn{
+    width:100%;
+    border:none;
+    padding:15px;
+    border-radius:30px;
+    background:#14833b;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.submit-btn:hover{
+    background:#0d612c;
+    transform:translateY(-2px);
+}
+
+/* ================= SERVICES STRIP ================= */
+
+.services-strip{
+    background:white;
+    padding:65px 20px;
+}
+
+.services-container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.services-title{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.services-title h2{
+    font-size:35px;
+    color:#14833b;
+}
+
+.services-title p{
+    color:#666;
+}
+
+.service-mini-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.service-mini{
+    padding:25px 18px;
+    text-align:center;
+    background:#f6faf7;
+    border-radius:15px;
+    border:1px solid #e6eee8;
+    transition:0.3s;
+}
+
+.service-mini:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.service-mini .icon{
+    font-size:35px;
+    margin-bottom:10px;
+}
+
+.service-mini h3{
+    color:#14833b;
+    font-size:18px;
+}
+
+.service-mini p{
+    color:#666;
+    font-size:14px;
+    margin-top:5px;
+}
+
+/* ================= LOCATION ================= */
+
+.location-section{
+    padding:70px 20px;
+    background:#f6faf7;
+}
+
+.location-box{
+    max-width:1200px;
+    margin:auto;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.location-content{
+    padding:40px;
+}
+
+.location-content h2{
+    color:#14833b;
+    font-size:32px;
+    margin-bottom:12px;
+}
+
+.location-content p{
+    color:#666;
+    margin-bottom:15px;
+}
+
+.location-card{
+    margin-top:20px;
+    padding:20px;
+    background:#f5faf6;
+    border-left:4px solid #f39c12;
+    border-radius:10px;
+}
+
+.location-card strong{
+    color:#14833b;
+}
+
+.location-map{
+    min-height:350px;
+    background:
+    linear-gradient(
+        rgba(20,131,59,0.82),
+        rgba(20,131,59,0.82)
+    ),
+    url("https://images.unsplash.com/photo-1524666041070-9cffc7d5d1c2?auto=format&fit=crop&w=1200&q=85");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-align:center;
+}
+
+.location-map-content{
+    padding:25px;
+}
+
+.location-map-content .pin{
+    font-size:55px;
+}
+
+.location-map-content h3{
+    font-size:27px;
+    margin:5px 0;
+}
+
+.location-map-content p{
+    color:#e8f5eb;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+    background:linear-gradient(135deg,#f39c12,#e58b08);
+    padding:65px 20px;
+    text-align:center;
+    color:white;
+}
+
+.cta h2{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.cta p{
+    max-width:700px;
+    margin:0 auto 25px;
+}
+
+.cta-btn{
+    display:inline-block;
+    background:#14833b;
+    padding:14px 28px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#101410;
+    color:white;
+    padding:55px 20px 20px;
+}
+
+.footer-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:2fr 1fr 1.4fr;
+    gap:40px;
+}
+
+footer h3{
+    color:#ffd45a;
+    margin-bottom:15px;
+}
+
+footer p,
+footer li{
+    color:#aaa;
+    margin-bottom:8px;
+}
+
+footer ul{
+    list-style:none;
+}
+
+footer a:hover{
+    color:#fff;
+}
+
+.footer-bottom{
+    max-width:1200px;
+    margin:35px auto 0;
+    padding-top:20px;
+    border-top:1px solid #303530;
+    text-align:center;
+    color:#777;
+    font-size:14px;
+}
+
+/* ================= FLOATING BUTTONS ================= */
+
+.floating-buttons{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    z-index:999;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.float{
+    width:54px;
+    height:54px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:24px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.25);
+}
+
+.float-whatsapp{
+    background:#25D366;
+}
+
+.float-call{
+    background:#14833b;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+    .nav-links{
+        gap:12px;
+    }
+
+    .nav-links a:not(.nav-btn){
+        display:none;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .service-mini-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .location-box{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    .navbar{
+        padding:14px 15px;
+    }
+
+    .logo{
+        font-size:20px;
+    }
+
+    .hero{
+        min-height:390px;
+    }
+
+    .hero-content{
+        padding:55px 18px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .contact-section{
+        padding:55px 15px;
+    }
+
+    .section-heading h2{
+        font-size:30px;
+    }
+
+    .contact-info,
+    .contact-form{
+        padding:25px 20px;
+    }
+
+    .service-mini-grid{
+        grid-template-columns:1fr;
+    }
+
+    .location-content{
+        padding:30px 22px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .cta h2{
+        font-size:30px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="navbar">
+
 ```
+<div class="logo">
+    Sarthak <span>Solar Solutions</span>
+</div>
+
+<nav class="nav-links">
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About</a>
+
+    <a href="contact.html">Contact</a>
+
+    <a href="contact.html" class="nav-btn">
+        Get Quote
+    </a>
+
+</nav>
+```
+
+</div>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+```
+<div class="hero-badge">
+    ☀️ CLEAN ENERGY • GREEN FUTURE
+</div>
+
+<h1>
+    Let's Go Solar
+    <span>Together</span>
+</h1>
+
+<p>
+    Have questions about rooftop solar?
+    Talk to Sarthak Solar Solutions and get
+    professional guidance for your home or business.
+</p>
+```
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section">
+
+<div class="section-heading">
+
+```
+<h2>Get In Touch With Us</h2>
+
+<p>
+    Tell us about your electricity requirements and
+    we will help you understand the right solar solution
+    for your property.
+</p>
+```
+
+</div>
+
+<div class="contact-grid">
+
+<!-- CONTACT INFO -->
+
+<div class="contact-info">
+
+```
+<h2>Contact Information</h2>
+
+<p>
+    Our team is available to discuss your solar
+    requirements and consultation.
+</p>
+
+
+<div class="info-item">
+
+    <div class="info-icon">📞</div>
+
+    <div>
+
+        <h4>Pardeep Kumar</h4>
+
+        <p>+91 8607606682</p>
+
+    </div>
+
+</div>
+
+
+<div class="info-item">
+
+    <div class="info-icon">📞</div>
+
+    <div>
+
+        <h4>Hans Verma</h4>
+
+        <p>+91 7037190065</p>
+
+    </div>
+
+</div>
+
+
+<div class="info-item">
+
+    <div class="info-icon">✉️</div>
+
+    <div>
+
+        <h4>Email</h4>
+
+        <p>sarthaksolaarsolutions@gmail.com</p>
+
+    </div>
+
+</div>
+
+
+<div class="info-item">
+
+    <div class="info-icon">📍</div>
+
+    <div>
+
+        <h4>Service Area</h4>
+
+        <p>
+            Palla, Delhi & surrounding areas
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="info-item">
+
+    <div class="info-icon">🕘</div>
+
+    <div>
+
+        <h4>Business Hours</h4>
+
+        <p>
+            Monday – Sunday<br>
+            09:00 AM – 06:00 PM
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="contact-actions">
+
+    <a
+    href="tel:+918607606682"
+    class="action-btn call-btn">
+        📞 Call Now
+    </a>
+
+    <a
+    href="https://wa.me/918607606682?text=Hello%2C%20I%20am%20interested%20in%20a%20free%20solar%20consultation."
+    target="_blank"
+    class="action-btn whatsapp-btn">
+        💬 WhatsApp
+    </a>
+
+</div>
+```
+
+</div>
+
+<!-- FORM -->
+
+<div class="contact-form">
+
+```
+<h2>Get a Free Consultation</h2>
+
+<p class="form-subtitle">
+    Fill in your details and we'll contact you.
+</p>
+
+
+<form onsubmit="sendWhatsApp(); return false;">
+
+    <div class="form-group">
+
+        <label>Your Name</label>
+
+        <input
+        type="text"
+        id="name"
+        placeholder="Enter your name"
+        required>
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>Mobile Number</label>
+
+        <input
+        type="tel"
+        id="mobile"
+        placeholder="Enter your mobile number"
+        pattern="[0-9]{10}"
+        required>
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>Solar Requirement</label>
+
+        <select id="requirement" required>
+
+            <option value="">
+                Select your requirement
+            </option>
+
+            <option>
+                Residential Rooftop Solar
+            </option>
+
+            <option>
+                Commercial Solar
+            </option>
+
+            <option>
+                Solar Installation
+            </option>
+
+            <option>
+                Solar Maintenance / Repair
+            </option>
+
+            <option>
+                Solar Panel Cleaning
+            </option>
+
+            <option>
+                Site Survey / Consultation
+            </option>
+
+            <option>
+                PM Surya Ghar / Subsidy Guidance
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>Message</label>
+
+        <textarea
+        id="message"
+        placeholder="Tell us about your electricity bill, rooftop or requirement..."></textarea>
+
+    </div>
+
+
+    <button
+    type="submit"
+    class="submit-btn">
+
+        💬 Send Enquiry on WhatsApp
+
+    </button>
+
+</form>
+```
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services-strip">
+
+<div class="services-container">
+
+```
+<div class="services-title">
+
+    <h2>Complete Solar Support</h2>
+
+    <p>
+        From initial consultation to installation and maintenance.
+    </p>
+
+</div>
+
+
+<div class="service-mini-grid">
+
+
+    <div class="service-mini">
+
+        <div class="icon">🏠</div>
+
+        <h3>Residential Solar</h3>
+
+        <p>
+            Rooftop solutions for homes.
+        </p>
+
+    </div>
+
+
+    <div class="service-mini">
+
+        <div class="icon">🏢</div>
+
+        <h3>Commercial Solar</h3>
+
+        <p>
+            Solutions for businesses.
+        </p>
+
+    </div>
+
+
+    <div class="service-mini">
+
+        <div class="icon">🔧</div>
+
+        <h3>Installation</h3>
+
+        <p>
+            Professional solar setup.
+        </p>
+
+    </div>
+
+
+    <div class="service-mini">
+
+        <div class="icon">☀️</div>
+
+        <h3>Maintenance</h3>
+
+        <p>
+            Solar service and support.
+        </p>
+
+    </div>
+
+
+</div>
+```
+
+</div>
+
+</section>
+
+<!-- ================= LOCATION ================= -->
+
+<section class="location-section">
+
+<div class="location-box">
+
+```
+<div class="location-content">
+
+    <h2>Serving Delhi & Nearby Areas</h2>
+
+    <p>
+        Sarthak Solar Solutions provides rooftop solar
+        consultation, installation and support in Palla,
+        Delhi and surrounding areas.
+    </p>
+
+
+    <div class="location-card">
+
+        <strong>📍 Our Service Area</strong>
+
+        <p>
+            Main Road, Near Balaji Mandir,
+            Palla, Delhi – 110036
+        </p>
+
+    </div>
+
+
+    <div class="location-card">
+
+        <strong>☀️ Solar Consultation</strong>
+
+        <p>
+            Contact us to discuss your electricity usage,
+            rooftop space and solar requirements.
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="location-map">
+
+    <div class="location-map-content">
+
+        <div class="pin">📍</div>
+
+        <h3>Palla, Delhi</h3>
+
+        <p>
+            Sarthak Solar Solutions
+        </p>
+
+    </div>
+
+</div>
+```
+
+</div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+```
+<h2>Ready to Switch to Solar?</h2>
+
+<p>
+    Start your journey towards cleaner energy
+    and smarter electricity management.
+</p>
+
+<a
+href="https://wa.me/918607606682?text=Hello%2C%20I%20want%20a%20free%20solar%20consultation."
+target="_blank"
+class="cta-btn">
+
+    💬 Talk to Us on WhatsApp
+
+</a>
+```
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-grid">
+
+```
+<div>
+
+    <h3>Sarthak Solar Solutions</h3>
+
+    <p>
+        Clean Energy | Green Future
+    </p>
+
+    <p>
+        Professional rooftop solar solutions
+        for homes, businesses and commercial properties.
+    </p>
+
+</div>
+
+
+<div>
+
+    <h3>Quick Links</h3>
+
+    <ul>
+
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+
+        <li>
+            <a href="about.html">About Us</a>
+        </li>
+
+        <li>
+            <a href="contact.html">Contact</a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+<div>
+
+    <h3>Contact</h3>
+
+    <p>📞 +91 8607606682</p>
+
+    <p>📞 +91 7037190065</p>
+
+    <p>✉️ sarthaksolaarsolutions@gmail.com</p>
+
+    <p>📍 Palla, Delhi</p>
+
+</div>
+```
+
+</div>
+
+<div class="footer-bottom">
+
+```
+© 2026 Sarthak Solar Solutions. All Rights Reserved.
+```
+
+</div>
+
+</footer>
+
+<!-- ================= FLOATING BUTTONS ================= -->
+
+<div class="floating-buttons">
+
+```
+<a
+href="https://wa.me/918607606682?text=Hello%2C%20I%20am%20interested%20in%20solar%20solutions."
+target="_blank"
+class="float float-whatsapp"
+aria-label="WhatsApp">
+    💬
+</a>
+
+<a
+href="tel:+918607606682"
+class="float float-call"
+aria-label="Call">
+    📞
+</a>
+```
+
+</div>
+
+<!-- ================= WHATSAPP FORM SCRIPT ================= -->
+
+<script>
+
+function sendWhatsApp(){
+
+    var name =
+    document.getElementById("name").value;
+
+    var mobile =
+    document.getElementById("mobile").value;
+
+    var requirement =
+    document.getElementById("requirement").value;
+
+    var message =
+    document.getElementById("message").value;
+
+
+    var whatsappMessage =
+    "Hello Sarthak Solar Solutions,%0A%0A" +
+
+    "*New Solar Enquiry*%0A%0A" +
+
+    "Name: " + encodeURIComponent(name) + "%0A" +
+
+    "Mobile: " + encodeURIComponent(mobile) + "%0A" +
+
+    "Requirement: " + encodeURIComponent(requirement) + "%0A" +
+
+    "Message: " + encodeURIComponent(message);
+
+
+    var whatsappURL =
+    "https://wa.me/918607606682?text=" +
+    whatsappMessage;
+
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+}
+
+</script>
+
+</body>
+</html>
